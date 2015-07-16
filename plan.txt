@@ -1,0 +1,20 @@
+Person inputs log ID
+
+Use log ID to determine fights - need boss ID and fight #
+
+Url is:
+https://www.warcraftlogs.com/reports/fights_and_participants/{logid}/0
+
+{fights":[{ "id":1, "start_time":131870, "end_time":475933, "boss":1778, "size":11, "difficulty":3, "kill":true, "partial":2, "bossPercentage":0, "name":"Hellfire Assault" },
+Json - Dictionary["fights"][list][boss:id, bossPercentage:0, id=fight number, pull boss name in too for future prettiness]
+
+
+Make dictionary and/or list of that data
+
+https://www.warcraftlogs.com/rankings/report_rankings_for_fight/{logid}/{fightid}/{bossid}
+
+example:
+https://www.warcraftlogs.com/rankings/report_rankings_for_fight/byHGWvkqDT8d3CXV/51/1795
+
+BS4 to pull the rows
+
