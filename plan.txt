@@ -18,3 +18,6 @@ https://www.warcraftlogs.com/rankings/report_rankings_for_fight/byHGWvkqDT8d3CXV
 
 BS4 to pull the rows
 
+
+
+http://www.kryogenix.org/code/browser/sorttable/

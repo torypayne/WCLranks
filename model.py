@@ -7,7 +7,7 @@ def get_fights_from_log_id(log_id):
 	r = json.loads(r.text)
 	return r
 
-def find_boss_fights(r):
+def find_boss_fights(r, log_id):
 	kills = []
 	fights = r["fights"]
 	for i in fights:
@@ -17,14 +17,15 @@ def find_boss_fights(r):
 				boss_dict["boss_id"] = i["boss"]
 				boss_dict["fight_id"] = i["id"]
 				boss_dict["boss_name"] = i["name"]
+				boss_dict["url"] = "https://www.warcraftlogs.com/rankings/report_rankings_for_fight/"+str(log_id)+"/"+str(boss_dict["fight_id"])+"/"+str(boss_dict["boss_id"])
 				kills.append(boss_dict)
 	return kills
 
-
-def create_urls_from_kills(kill_list):
-	pass
-
-def scrape_rankings(url_list):
+def scrape_rankings(kills):
+	for kill in kills:
+		r=requests.get(kill["url"])
+		soup = BeautifulSoup(r.text)
+		print soup
 	pass
 
 def clean_rankings(scraped_stuff):
@@ -32,5 +33,6 @@ def clean_rankings(scraped_stuff):
 
 def analyze(log_id):
 	r = get_fights_from_log_id(log_id)
-	kills = find_boss_fights(r)
+	kills = find_boss_fights(r, log_id)
+	scrape_rankings(kills)
 	return kills
