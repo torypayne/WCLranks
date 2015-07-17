@@ -111,8 +111,8 @@ def tank_rankings(soup, rankings, boss_id):
 		if name not in rankings["tank"]:
 			rankings["tank"][name] = {}
 			rankings["tank"][name]["class"] = link['class'][0]
-			if rankings["dps"][name]["class"] == "DeathKnight":
-				rankings["dps"][name]["class"] = "Death Knight"
+			if rankings["tank"][name]["class"] == "DeathKnight":
+				rankings["tank"][name]["class"] = "Death Knight"
 			rankings["tank"][name]["spec_path"] = spec_path
 			rankings["tank"][name]["spec"] = spec
 			rankings["tank"][name]["rank"] = {}
