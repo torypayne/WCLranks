@@ -40,3 +40,8 @@ To do at some point: get class icons
 
 
 http://localhost:5000/report?report=Dk78JvytXqLF6GdZ
+
+
+                    {% for boss in boss_list %}
+                    <td>{{value["rank"][boss["boss_id"]]}}</td>
+                    {% endfor %}
