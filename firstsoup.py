@@ -27,6 +27,10 @@ for row in rows:
 		print row
 
 
+s = soup.findAll("table")[3]
+for row in s.findAll("tr")[1:]
+	print row.findAll("td")[4]["a"]
+
 
 # https://www.warcraftlogs.com/rankings/report_rankings_for_fight/ + log id + fight + boss ID
 

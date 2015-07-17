@@ -21,3 +21,19 @@ BS4 to pull the rows
 
 
 http://www.kryogenix.org/code/browser/sorttable/
+
+
+List of boss fights
+
+Each player is a dictionary
+Class
+Spec
+Fight id{
+	ranking: 
+	bracketed ranking:
+	dps:
+	spec
+}
+
+
+To do at some point: get class icons

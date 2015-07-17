@@ -6,6 +6,7 @@ beautifulsoup4==4.4.0
 cffi==1.1.2
 cryptography==0.9.3
 enum34==1.0.4
+html5lib==1.0b7
 idna==2.0
 ipaddress==1.0.13
 itsdangerous==0.24

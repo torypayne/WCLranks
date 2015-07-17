@@ -22,11 +22,25 @@ def find_boss_fights(r, log_id):
 	return kills
 
 def scrape_rankings(kills):
+	rankings = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
-		soup = BeautifulSoup(r.text)
-		print soup
-	pass
+		soup = BeautifulSoup(r.text, "html5lib")
+		data = dps_rankings(soup, rankings, kill["boss_name"])
+	return data
+
+def dps_rankings(soup, rankings, boss_name):
+	table = soup.findAll("table")[3]
+	for row in table.findAll("tr")[1:]:
+		link = row.findAll("a")[0]
+		name = link.contents[0]
+		if name not in rankings:
+			rankings[name] = {}
+			rankings[name]["class"] = link['class']
+		rankings[name][boss_name] = {}
+		rankings[name][boss_name]["rank"] = row.findAll("td")[0].contents[0]
+	return rankings
+
 
 def clean_rankings(scraped_stuff):
 	pass
@@ -34,5 +48,5 @@ def clean_rankings(scraped_stuff):
 def analyze(log_id):
 	r = get_fights_from_log_id(log_id)
 	kills = find_boss_fights(r, log_id)
-	scrape_rankings(kills)
-	return kills
+	data = scrape_rankings(kills)
+	return data
