@@ -28,6 +28,15 @@ def scrape_rankings(kills):
 	rankings["dps"] = {}
 	rankings["hps"] = {}
 	rankings["guild"] = {}
+	rankings["guild"]["execution"] = {}
+	rankings["guild"]["execution"]["rank"] = {}
+	rankings["guild"]["execution"]["deaths"] = {}
+	rankings["guild"]["execution"]["ilvl"] = {}
+	rankings["guild"]["execution"]["damage_taken"] = {}
+	rankings["guild"]["speed"] = {}
+	rankings["guild"]["speed"]["rank"] = {}
+	rankings["guild"]["speed"]["duration"] = {}
+	rankings["guild"]["speed"]["ilvl"] = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
 		soup = BeautifulSoup(r.text, "html5lib")
@@ -121,29 +130,18 @@ def tank_rankings(soup, rankings, boss_id):
 	return rankings
 
 def guild_rankings(soup, rankings, boss_id):
-	# table = soup.findAll("table")[2]
-	# for row in table.findAll("tr")[1:]:
-	# 	link = row.findAll("a")[0]
-	# 	name = link.contents[0]
-	# 	spec_path = row.findAll("img")[0]["src"]
-	# 	spec = re.findall( '-(.*?).jpg', spec_path)[0]
-	# 	if name not in rankings["tank"]:
-	# 		rankings["tank"][name] = {}
-	# 		rankings["tank"][name]["class"] = link['class'][0]
-	# 		rankings["tank"][name]["spec_path"] = spec_path
-	# 		rankings["tank"][name]["spec"] = spec
-	# 		rankings["tank"][name]["rank"] = {}
-	# 		rankings["tank"][name]["healing"] = {}
-	# 		rankings["tank"][name]["bracket"] = {}
-	# 		rankings["tank"][name]["br_rank"] = {}
-	# 		rankings["tank"][name]["ilvl"] = {}
-	# 	rankings["tank"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
-	# 	rankings["tank"][name]["healing"][boss_id] = row.findAll("td")[5].contents[0]
-	# 	rankings["tank"][name]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
-	# 	rankings["tank"][name]["bracket"][boss_id] = row.findAll("td")[7].contents[0]
-	# 	rankings["tank"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
-	# 	if rankings["tank"][name]["spec"] != spec:
-	# 		rankings["tank"][name]["spec"] = "Multiple"
+	table = soup.findAll("table")[0]
+	for row in table.findAll("tr")[1:]:
+		rankings["guild_name"] = row.findAll("td")[4].contents[0]
+		rankings["guild"]["execution"]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+		rankings["guild"]["execution"]["deaths"][boss_id] = row.findAll("td")[5].contents[0]
+		rankings["guild"]["execution"]["ilvl"][boss_id] = row.findAll("td")[7].contents[0]
+		rankings["guild"]["execution"]["damage_taken"][boss_id] = row.findAll("td")[6].contents[0]
+	table = soup.findAll("table")[1]
+	for row in table.findAll("tr")[1:]:
+		rankings["guild"]["speed"]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+		rankings["guild"]["speed"]["duration"][boss_id] = row.findAll("td")[5].contents[0]
+		rankings["guild"]["speed"]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
 	return rankings
 
 def analyze(log_id):

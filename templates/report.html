@@ -14,7 +14,31 @@
               <h1 id="tables">Rankings at a Glance</h1>
             </div>
             <div class="component">
-            	<h2>DPS Rankings</h2>
+            	<h3>Guild Rankings</h3>
+              <table class="table table-striped table-hover sortable">
+                <thead>
+                  <tr>
+                    <th>Category</th>
+                    {% for boss in boss_list %}
+                    <th>{{boss["boss_name"]}}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                	{% for key, value in rankings["guild"].iteritems() %}
+                  <tr>
+                    <td>{{key|capitalize}}</td>
+                    {% for boss in boss_list %}
+                    <td>{{value["rank"][boss["boss_id"]]}}</td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table> 
+          </div>
+
+            <div class="component">
+            	<h3>DPS Rankings</h3>
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
@@ -26,7 +50,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                	{% for key, value in players["dps"].iteritems() %}
+                	{% for key, value in rankings["dps"].iteritems() %}
                   <tr>
                     <td>{{key}}</td>
                     <td>{{value["spec"]}} {{value["class"]}}</td>
@@ -40,7 +64,7 @@
           </div>
 
             <div class="component">
-            	<h2>HPS Rankings</h2>
+            	<h3>HPS Rankings</h3>
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
@@ -52,7 +76,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                	{% for key, value in players["hps"].iteritems() %}
+                	{% for key, value in rankings["hps"].iteritems() %}
                   <tr>
                     <td>{{key}}</td>
                     <td>{{value["spec"]}} {{value["class"]}}</td>
@@ -66,7 +90,7 @@
           </div>
 
              <div class="component">
-            	<h2>KSRI Tank Rankings (Experimental)</h2>
+            	<h3>KSRI Tank Rankings (Experimental)</h3>
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
@@ -78,7 +102,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                	{% for key, value in players["tank"].iteritems() %}
+                	{% for key, value in rankings["tank"].iteritems() %}
                   <tr>
                     <td>{{key}}</td>
                     <td>{{value["spec"]}} {{value["class"]}}</td>

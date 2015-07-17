@@ -22,9 +22,9 @@ def report():
 	report = report[-16:]
 	analyzed = model.analyze(report)
 	boss_list = analyzed[0]
-	players = analyzed[1]
+	rankings = analyzed[1]
 	simple_boss_list = ["Hellfire Assault", "Iron Reaver"]
-	return render_template("report.html", boss_list=boss_list, players=players, simple=simple_boss_list)
+	return render_template("report.html", boss_list=boss_list, rankings=rankings, simple=simple_boss_list)
 
 
 
