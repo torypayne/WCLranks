@@ -1,23 +1,41 @@
 <!-- Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
- -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
 <!-- Optional theme -->
 <link rel="stylesheet" href="static/css/cyborg.bootstrap.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" href="static/css/ladda-themeless.min.css">
+
+
 
 <div class="container">
 <br>
+<form action="/report">
 <div class="jumbotron">
-                <h1>Rankings at a Glance</h1>
+                <h1>Rank Report</h1>
                 <p>Input a WCL report.  Get everyone's ranks on every boss.  That easy.</p>
 				<div class="input-group">
-                    <input type="text" class="form-control" placeholder="Link to your report">
+                    <input type="text" class="form-control" placeholder="Link to your report" name="report" id="report">
                     <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button">Submit</button>
+                      <button class="btn btn-primary ladda-button" type="submit" data-style="slide-left"><span class="ladda-label">Submit</span></button>
                     </span>
                   </div>
-              </div>
 
+              </div>
+</form>
 </div>
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="static/js/spin.min.js"></script>
+<script src="static/js/ladda.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+<script>
+           Ladda.bind( '.ladda-button', { timeout: 10000 } );
+</script>
+

@@ -28,10 +28,10 @@ def scrape_rankings(kills):
 	for kill in kills:
 		r=requests.get(kill["url"])
 		soup = BeautifulSoup(r.text, "html5lib")
-		data = dps_rankings(soup, rankings, kill["boss_name"])
+		data = dps_rankings(soup, rankings, kill["boss_id"])
 	return data
 
-def dps_rankings(soup, rankings, boss_name):
+def dps_rankings(soup, rankings, boss_id):
 	table = soup.findAll("table")[3]
 	for row in table.findAll("tr")[1:]:
 		link = row.findAll("a")[0]
@@ -43,13 +43,15 @@ def dps_rankings(soup, rankings, boss_name):
 			rankings[name]["class"] = link['class'][0]
 			rankings[name]["spec_path"] = spec_path
 			rankings[name]["spec"] = spec
-		rankings[name][boss_name] = {}
-		rankings[name][boss_name]["rank"] = row.findAll("td")[0].contents[0]
-		rankings[name][boss_name]["spec"] = spec
-		rankings[name][boss_name]["damage"] = row.findAll("td")[5].contents[0]
-		rankings[name][boss_name]["ilvl"] = row.findAll("td")[6].contents[0]
-		rankings[name][boss_name]["bracket"] = row.findAll("td")[7].contents[0]
-		rankings[name][boss_name]["br_rank"] = row.findAll("td")[8].contents[0]
+			rankings[name]["rank"] = {}
+		rankings[name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+		# rankings[name][boss_id] = {}
+		# rankings[name][boss_id]["rank"] = row.findAll("td")[0].contents[0]
+		# rankings[name][boss_id]["spec"] = spec
+		# rankings[name][boss_id]["damage"] = row.findAll("td")[5].contents[0]
+		# rankings[name][boss_id]["ilvl"] = row.findAll("td")[6].contents[0]
+		# rankings[name][boss_id]["bracket"] = row.findAll("td")[7].contents[0]
+		# rankings[name][boss_id]["br_rank"] = row.findAll("td")[8].contents[0]
 	return rankings
 
 
