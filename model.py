@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 
 def get_fights_from_log_id(log_id):
 	r = requests.get("https://www.warcraftlogs.com/reports/fights_and_participants/"+log_id+"/0")
@@ -34,19 +35,25 @@ def dps_rankings(soup, rankings, boss_name):
 	for row in table.findAll("tr")[1:]:
 		link = row.findAll("a")[0]
 		name = link.contents[0]
+		spec_path = row.findAll("img")[0]["src"]
+		spec = re.findall( '-(.*?).jpg', spec_path)[0]
 		if name not in rankings:
 			rankings[name] = {}
 			rankings[name]["class"] = link['class']
+			rankings[name]["spec_path"] = spec_path
+			rankings[name]["spec"] = spec
 		rankings[name][boss_name] = {}
 		rankings[name][boss_name]["rank"] = row.findAll("td")[0].contents[0]
+		rankings[name][boss_name]["spec"] = spec
+		rankings[name][boss_name]["damage"] = row.findAll("td")[5].contents[0]
+		rankings[name][boss_name]["ilvl"] = row.findAll("td")[6].contents[0]
+		rankings[name][boss_name]["bracket"] = row.findAll("td")[7].contents[0]
+		rankings[name][boss_name]["br_rank"] = row.findAll("td")[8].contents[0]
 	return rankings
 
-
-def clean_rankings(scraped_stuff):
-	pass
 
 def analyze(log_id):
 	r = get_fights_from_log_id(log_id)
 	kills = find_boss_fights(r, log_id)
-	data = scrape_rankings(kills)
-	return data
+	details = scrape_rankings(kills)
+	return kills, details
