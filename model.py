@@ -5,6 +5,7 @@ import re
 
 def get_fights_from_log_id(log_id):
 	r = requests.get("https://www.warcraftlogs.com/reports/fights_and_participants/"+log_id+"/0")
+	print r
 	r = json.loads(r.text)
 	return r
 
@@ -39,7 +40,7 @@ def dps_rankings(soup, rankings, boss_name):
 		spec = re.findall( '-(.*?).jpg', spec_path)[0]
 		if name not in rankings:
 			rankings[name] = {}
-			rankings[name]["class"] = link['class']
+			rankings[name]["class"] = link['class'][0]
 			rankings[name]["spec_path"] = spec_path
 			rankings[name]["spec"] = spec
 		rankings[name][boss_name] = {}
@@ -53,7 +54,9 @@ def dps_rankings(soup, rankings, boss_name):
 
 
 def analyze(log_id):
-	r = get_fights_from_log_id(log_id)
-	kills = find_boss_fights(r, log_id)
+	response = get_fights_from_log_id(log_id)
+	kills = find_boss_fights(response, log_id)
 	details = scrape_rankings(kills)
 	return kills, details
+
+

@@ -37,3 +37,6 @@ Fight id{
 
 
 To do at some point: get class icons
+
+
+http://localhost:5000/report?report=Dk78JvytXqLF6GdZ

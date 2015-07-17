@@ -16,6 +16,20 @@ def index():
 	return render_template("index.html")
 
 
+@app.route("/report")
+def report():
+	report = request.args.get("report")
+	# print report
+	analyzed = model.analyze(report)
+	# print analyzed
+	# return render_template("index.html")
+	# analyzed = model.analyze("report")
+	boss_list = analyzed[0]
+	players = analyzed[1]
+	# print boss_list
+	simple_boss_list = ["Hellfire Assault", "Iron Reaver"]
+	return render_template("report.html", boss_list=boss_list, players=players, simple=simple_boss_list)
+
 
 
 
