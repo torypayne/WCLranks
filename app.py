@@ -30,7 +30,6 @@ def report():
 		analyzed = r.hgetall(report)
 		boss_list = analyzed["kills"]
 		rankings = analyzed["details"]
-		print "You just pulled this log from redis. Yay!"
 		boss_list = ast.literal_eval(boss_list)
 		rankings = ast.literal_eval(rankings)
 		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
