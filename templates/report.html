@@ -83,8 +83,14 @@
                 </thead>
                 <tbody>
                 	{% for key, value in rankings["dps"].iteritems() %}
-                  <tr>
-                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                  {% if value["spec"] == "Multiple" %}
+                  <tr data-toggle="tooltip" data-placement="left" title="Multiple specs">
+                    {% else %}
+                    <tr>
+                      {% endif %}
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'>
+                      <img class="icons" src="static{{value['spec_path']}}">
+                    </td>
                     <td>{{key}}</td>
                     <td>{{value["ilvl"]}}
                     {% for boss in boss_list %}
@@ -172,7 +178,11 @@
                 </thead>
                 <tbody>
                   {% for key, value in rankings["dps"].iteritems() %}
-                  <tr>
+                  {% if value["spec"] == "Multiple" %}
+                  <tr data-toggle="tooltip" data-placement="left" title="Multiple specs">
+                    {% else %}
+                    <tr>
+                      {% endif %}
                     <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
                     <td>{{key}}</td>
                     <td>{{value["ilvl"]}}</td>
@@ -236,8 +246,10 @@
                 <tbody>
                   {% for key, value in rankings["tank"].iteritems() %}
                   <tr>
-                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
-                    <td>{{key}}</td>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'>
+                      <img class="icons" src="static{{value['spec_path']}}">
+                    </td>
+                    <td>{{key}} {{value["spec"]}}</td>
                     <td>{{value["ilvl"]}}</td>
                     <td>{{value["bracket"]}}</td>
                     {% for boss in boss_list %}
@@ -265,11 +277,14 @@
                 </thead>
                 <tbody>
                   {% for key, value in rankings["dps"].iteritems() %}
-                  <tr>
+                  {% if value["spec"] == "Multiple" %}
+                  <tr data-toggle="tooltip" data-placement="left" title="Multiple specs">
+                    {% else %}
+                    <tr>
+                      {% endif %}
                     <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
                     <td>{{key}}</td>
                     <td>{{value["ilvl"]}}</td>
-                    <td>{{value["bracket"]}}</td>
                     {% for boss in boss_list %}
                     <td class='{{value["rank_class"][boss["boss_id"]]}}'>
 
@@ -301,7 +316,6 @@
                     <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
                     <td>{{key}}</td>
                     <td>{{value["ilvl"]}}</td>
-                    <td>{{value["bracket"]}}</td>
                     {% for boss in boss_list %}
                       <td class='{{value["rank_class"][boss["boss_id"]]}}'>{{value["healing"][boss["boss_id"]]}}</td>
                     {% endfor %}
@@ -354,3 +368,7 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
