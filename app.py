@@ -3,13 +3,19 @@ import requests
 import json
 import model
 import os
+import redis
+import ast
 
 app = Flask(__name__)
 try:
 	app.secret_key = os.environ['FLASK_KEY']
+	r = redis.from_url(os.environ.get('REDIS_URL'))
 except:
 	import config
 	app.secret_key = config.FLASK_KEY
+	r = redis.from_url(config.REDIS_URL)
+	
+
 
 @app.route("/")
 def index():
@@ -20,11 +26,20 @@ def index():
 def report():
 	report = request.args.get("report")
 	report = report[-16:]
-	analyzed = model.analyze(report)
-	boss_list = analyzed[0]
-	rankings = analyzed[1]
-	simple_boss_list = ["Hellfire Assault", "Iron Reaver"]
-	return render_template("report.html", boss_list=boss_list, rankings=rankings, simple=simple_boss_list)
+	try:
+		analyzed = r.hgetall(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		print "You just pulled this log from redis. Yay!"
+		boss_list = ast.literal_eval(boss_list)
+		rankings = ast.literal_eval(rankings)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+	except:
+		analyzed = model.analyze(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		r.hmset(report, analyzed)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 
 
 @app.route("/about")

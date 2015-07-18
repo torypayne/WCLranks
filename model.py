@@ -225,6 +225,7 @@ def analyze(log_id):
 	response = get_fights_from_log_id(log_id)
 	kills = find_boss_fights(response, log_id)
 	details = scrape_rankings(kills)
-	return kills, details
+	report = {"kills": kills, "details": details}
+	return report
 
 
