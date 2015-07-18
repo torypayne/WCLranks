@@ -62,6 +62,7 @@ Use log ID to determine fights - need boss ID and fight #
 Url is:
 https://www.warcraftlogs.com/reports/fights_and_participants/{logid}/0
 
+https://www.warcraftlogs.com/reports/fights_and_participants/r41GRFmW9wBLCQ2V/0
 
 https://www.warcraftlogs.com/reports/r41GRFmW9wBLCQ2V
 {fights":[{ "id":1, "start_time":131870, "end_time":475933, "boss":1778, "size":11, "difficulty":3, "kill":true, "partial":2, "bossPercentage":0, "name":"Hellfire Assault" },

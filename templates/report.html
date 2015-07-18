@@ -28,14 +28,26 @@
 <div class="col-lg-12">
             <div class="page-header">
               <h1 id="tables">Rankings at a Glance</h1>
-              <h5>{{rankings["guild_name"]}} - <a href="https://www.warcraftlogs.com/reports/{{report}}">Log</a></h5>
+              <h5>{{rankings["guild_name"]}} - <a target="_blank" href="https://www.warcraftlogs.com/reports/{{report}}">Log</a></h5>
+
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#Rankings">Ranks</a></li>
+    <li><a data-toggle="pill" href="#Bracket_Ranks">Bracket Ranks</a></li>
+    <li><a data-toggle="pill" href="#DPS">DPS/HPS</a></li>
+   </ul>
             </div>
+             <div class="tab-content">
+    <div id="Rankings" class="tab-pane fade in active">
+
+
+
             <div class="component">
             	<h3>Guild Rankings</h3>
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
                     <th>Category</th>
+                    <th>Average Item Level</th>
                     {% for boss in boss_list %}
                     <th>{{boss["boss_name"]}}</th>
                     {% endfor %}
@@ -45,6 +57,7 @@
                 	{% for key, value in rankings["guild"].iteritems() %}
                   <tr>
                     <td>{{key|capitalize}}</td>
+                    <td>{{rankings["guild_ilvl"]}}</td>
                     {% for boss in boss_list %}
                       <td class='{{value["rank_class"][boss["boss_id"]]}}'>{{value["rank"][boss["boss_id"]]}}
                     </td>
@@ -60,8 +73,9 @@
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
-                    <th>Player</th>
                     <th>Spec</th>
+                    <th>Player</th>
+                    <th>Item Level</th>
                     {% for boss in boss_list %}
                     <th>{{boss["boss_name"]}}</th>
                     {% endfor %}
@@ -70,8 +84,9 @@
                 <tbody>
                 	{% for key, value in rankings["dps"].iteritems() %}
                   <tr>
-                    <td>{{key}}</td>
                     <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{key}}</td>
+                    <td>{{value["ilvl"]}}
                     {% for boss in boss_list %}
                     <td class='{{value["rank_class"][boss["boss_id"]]}}'>
 
@@ -89,8 +104,9 @@
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
+                    <th>Spec</th>
                     <th>Player</th>
-                    <th>Class/Spec</th>
+                    <th>Item Level</th>
                     {% for boss in boss_list %}
                     <th>{{boss["boss_name"]}}</th>
                     {% endfor %}
@@ -99,8 +115,9 @@
                 <tbody>
                 	{% for key, value in rankings["hps"].iteritems() %}
                   <tr>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
                     <td>{{key}}</td>
-					<td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{value["ilvl"]}}</td>
                     {% for boss in boss_list %}
                       <td class='{{value["rank_class"][boss["boss_id"]]}}'>{{value["rank"][boss["boss_id"]]}}</td>
                     {% endfor %}
@@ -115,8 +132,9 @@
               <table class="table table-striped table-hover sortable">
                 <thead>
                   <tr>
+                    <th>Spec</th>
                     <th>Player</th>
-                    <th>Class/Spec</th>
+                    <th>Item Level</th>
                     {% for boss in boss_list %}
                     <th>{{boss["boss_name"]}}</th>
                     {% endfor %}
@@ -125,8 +143,9 @@
                 <tbody>
                 	{% for key, value in rankings["tank"].iteritems() %}
                   <tr>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
                     <td>{{key}}</td>
-					<td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{value["ilvl"]}}
                     {% for boss in boss_list %}
                       <td class='{{value["rank_class"][boss["boss_id"]]}}'>{{value["rank"][boss["boss_id"]]}}</td>
                     {% endfor %}
@@ -135,6 +154,107 @@
                 </tbody>
               </table> 
           </div>
+</div>
+ <div id="Bracket_Ranks" class="tab-pane fade">
+            <div class="component">
+              <h3>Bracketed DPS Rankings</h3>
+              <table class="table table-striped table-hover sortable">
+                <thead>
+                  <tr>
+                    <th>Spec</th>
+                    <th>Player</th>
+                    <th>Item Level</th>
+                    <th>Item Level Bracket</th>
+                    {% for boss in boss_list %}
+                    <th>{{boss["boss_name"]}}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for key, value in rankings["dps"].iteritems() %}
+                  <tr>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{key}}</td>
+                    <td>{{value["ilvl"]}}</td>
+                    <td>{{value["bracket"]}}</td>
+                    {% for boss in boss_list %}
+                    <td class='{{value["br_rank_class"][boss["boss_id"]]}}'>
+
+                      {{value["br_rank"][boss["boss_id"]]}}
+              </td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table> 
+          </div>
+
+            <div class="component">
+              <h3>HPS Rankings</h3>
+              <table class="table table-striped table-hover sortable">
+                <thead>
+                  <tr>
+                    <th>Spec</th>
+                    <th>Player</th>
+                    <th>Item Level</th>
+                    <th>Item Level Bracket</th>
+                    {% for boss in boss_list %}
+                    <th>{{boss["boss_name"]}}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for key, value in rankings["hps"].iteritems() %}
+                  <tr>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{key}}</td>
+                    <td>{{value["ilvl"]}}</td>
+                    <td>{{value["bracket"]}}</td>
+                    {% for boss in boss_list %}
+                      <td class='{{value["br_rank_class"][boss["boss_id"]]}}'>{{value["br_rank"][boss["boss_id"]]}}</td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table> 
+          </div>
+
+             <div class="component">
+              <h3>KSRI Tank Rankings (Experimental)</h3>
+              <table class="table table-striped table-hover sortable">
+                <thead>
+                  <tr>
+                    <th>Spec</th>
+                    <th>Player</th>
+                    <th>Item Level</th>
+                    <th>Item Level Bracket</th>
+                    {% for boss in boss_list %}
+                    <th>{{boss["boss_name"]}}</th>
+                    {% endfor %}
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for key, value in rankings["tank"].iteritems() %}
+                  <tr>
+                    <td sorttable_customkey='{{value["class"]}}_{{value["spec"]}}'><img class="icons" src="static{{value['spec_path']}}"></td>
+                    <td>{{key}}</td>
+                    <td>{{value["ilvl"]}}</td>
+                    <td>{{value["bracket"]}}</td>
+                    {% for boss in boss_list %}
+                      <td class='{{value["br_rank_class"][boss["boss_id"]]}}'>{{value["br_rank"][boss["boss_id"]]}}</td>
+                    {% endfor %}
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table> 
+          </div>
+    </div>
+    <div id="DPS" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Hi Tory<3</p>
+    </div>
+
+
 </div>
 
 

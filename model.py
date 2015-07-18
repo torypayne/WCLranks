@@ -33,13 +33,11 @@ def scrape_rankings(kills):
 	rankings["guild"]["execution"]["rank"] = {}
 	rankings["guild"]["execution"]["rank_class"] = {}
 	rankings["guild"]["execution"]["deaths"] = {}
-	rankings["guild"]["execution"]["ilvl"] = {}
 	rankings["guild"]["execution"]["damage_taken"] = {}
 	rankings["guild"]["speed"] = {}
 	rankings["guild"]["speed"]["rank"] = {}
 	rankings["guild"]["speed"]["rank_class"] = {}
 	rankings["guild"]["speed"]["duration"] = {}
-	rankings["guild"]["speed"]["ilvl"] = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
 		soup = BeautifulSoup(r.text, "html5lib")
@@ -66,9 +64,12 @@ def dps_rankings(soup, rankings, boss_id):
 			rankings["dps"][name]["rank"] = {}
 			rankings["dps"][name]["rank_class"] = {}
 			rankings["dps"][name]["damage"] = {}
-			rankings["dps"][name]["bracket"] = {}
+			bracket = row.findAll("td")[7].contents[0]
+			bracket = bracket.strip(" Item Level")
+			rankings["dps"][name]["bracket"] = bracket
 			rankings["dps"][name]["br_rank"] = {}
-			rankings["dps"][name]["ilvl"] = {}
+			rankings["dps"][name]["br_rank_class"] = {}
+			rankings["dps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
 		rankings["dps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
 		x = int(rankings["dps"][name]["rank"][boss_id])
 		if x > 50:
@@ -84,9 +85,20 @@ def dps_rankings(soup, rankings, boss_id):
 		else:
 			rankings["dps"][name]["rank_class"][boss_id] = "common"
 		rankings["dps"][name]["damage"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["dps"][name]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
-		rankings["dps"][name]["bracket"][boss_id] = row.findAll("td")[7].contents[0]
 		rankings["dps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+		x = int(rankings["dps"][name]["br_rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["dps"][name]["br_rank_class"][boss_id] = "legendary"
+				else:
+					rankings["dps"][name]["br_rank_class"][boss_id] = "epic"
+			else:
+				rankings["dps"][name]["br_rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["dps"][name]["br_rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["dps"][name]["br_rank_class"][boss_id] = "common"
 		if rankings["dps"][name]["spec"] != spec:
 			rankings["dps"][name]["spec"] = "Multiple"
 	return rankings
@@ -107,9 +119,12 @@ def hps_rankings(soup, rankings, boss_id):
 			rankings["hps"][name]["rank"] = {}
 			rankings["hps"][name]["rank_class"] = {}
 			rankings["hps"][name]["healing"] = {}
-			rankings["hps"][name]["bracket"] = {}
+			bracket = row.findAll("td")[7].contents[0]
+			bracket = bracket.strip(" Item Level")
+			rankings["hps"][name]["bracket"] = bracket
 			rankings["hps"][name]["br_rank"] = {}
-			rankings["hps"][name]["ilvl"] = {}
+			rankings["hps"][name]["br_rank_class"] = {}
+			rankings["hps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
 		rankings["hps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
 		x = int(rankings["hps"][name]["rank"][boss_id])
 		if x > 50:
@@ -125,9 +140,20 @@ def hps_rankings(soup, rankings, boss_id):
 		else:
 			rankings["hps"][name]["rank_class"][boss_id] = "common"
 		rankings["hps"][name]["healing"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["hps"][name]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
-		rankings["hps"][name]["bracket"][boss_id] = row.findAll("td")[7].contents[0]
 		rankings["hps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+		x = int(rankings["hps"][name]["br_rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["hps"][name]["br_rank_class"][boss_id] = "legendary"
+				else:
+					rankings["hps"][name]["br_rank_class"][boss_id] = "epic"
+			else:
+				rankings["hps"][name]["br_rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["hps"][name]["br_rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["hps"][name]["br_rank_class"][boss_id] = "common"
 		if rankings["hps"][name]["spec"] != spec:
 			rankings["hps"][name]["spec"] = "Multiple"
 	return rankings
@@ -149,9 +175,12 @@ def tank_rankings(soup, rankings, boss_id):
 			rankings["tank"][name]["rank"] = {}
 			rankings["tank"][name]["rank_class"] = {}
 			rankings["tank"][name]["healing"] = {}
-			rankings["tank"][name]["bracket"] = {}
+			bracket = row.findAll("td")[7].contents[0]
+			bracket = bracket.strip(" Item Level")
+			rankings["tank"][name]["bracket"] = bracket
 			rankings["tank"][name]["br_rank"] = {}
-			rankings["tank"][name]["ilvl"] = {}
+			rankings["tank"][name]["br_rank_class"] = {}
+			rankings["tank"][name]["ilvl"] = row.findAll("td")[6].contents[0]
 		rankings["tank"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
 		x = int(rankings["tank"][name]["rank"][boss_id])
 		if x > 50:
@@ -167,9 +196,20 @@ def tank_rankings(soup, rankings, boss_id):
 		else:
 			rankings["tank"][name]["rank_class"][boss_id] = "common"
 		rankings["tank"][name]["healing"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["tank"][name]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
-		rankings["tank"][name]["bracket"][boss_id] = row.findAll("td")[7].contents[0]
 		rankings["tank"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+		x = int(rankings["tank"][name]["br_rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["tank"][name]["br_rank_class"][boss_id] = "legendary"
+				else:
+					rankings["tank"][name]["br_rank_class"][boss_id] = "epic"
+			else:
+				rankings["tank"][name]["br_rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["tank"][name]["br_rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["tank"][name]["br_rank_class"][boss_id] = "common"
 		if rankings["tank"][name]["spec"] != spec:
 			rankings["tank"][name]["spec"] = "Multiple"
 	return rankings
@@ -178,6 +218,7 @@ def guild_rankings(soup, rankings, boss_id):
 	table = soup.findAll("table")[0]
 	for row in table.findAll("tr")[1:]:
 		rankings["guild_name"] = row.findAll("td")[4].contents[0]
+		rankings["guild_ilvl"] = row.findAll("td")[7].contents[0]
 		rankings["guild"]["execution"]["rank"][boss_id] = row.findAll("td")[0].contents[0]
 		try:
 			x = int(rankings["guild"]["execution"]["rank"][boss_id])
@@ -196,7 +237,6 @@ def guild_rankings(soup, rankings, boss_id):
 		except:
 			rankings["guild"]["execution"]["rank_class"][boss_id] = "common"
 		rankings["guild"]["execution"]["deaths"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["guild"]["execution"]["ilvl"][boss_id] = row.findAll("td")[7].contents[0]
 		rankings["guild"]["execution"]["damage_taken"][boss_id] = row.findAll("td")[6].contents[0]
 	table = soup.findAll("table")[1]
 	for row in table.findAll("tr")[1:]:
@@ -218,7 +258,6 @@ def guild_rankings(soup, rankings, boss_id):
 		except:
 			rankings["guild"]["speed"]["rank_class"][boss_id] = "common"
 		rankings["guild"]["speed"]["duration"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["guild"]["speed"]["ilvl"][boss_id] = row.findAll("td")[6].contents[0]
 	return rankings
 
 def analyze(log_id):
