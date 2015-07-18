@@ -1,15 +1,15 @@
-<!-- Latest compiled and minified CSS -->
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
-
-<!-- Optional theme -->
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Rank Report - Get all the ranks from your Warcraft Logs Reports</title>
 <link rel="stylesheet" href="static/css/cyborg.bootstrap.min.css">
 
 <link rel="stylesheet" href="static/css/main.css">
 <link rel="stylesheet" href="static/css/ladda-themeless.min.css">
 
+<link rel="shortcut icon" href="static/favicon.ico">
 
-
-
+</head>
+<body>
 <div class="collapse navbar-collapse navbar-inverse">
 	<div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
@@ -35,7 +35,7 @@
           <h3 class="panel-title">How does this work?</h3>
         </div>
         <div class="panel-body">
-           <p>Input a link to the front page of a warcraft logs report, the url should look something like <a href="https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF" target="_blank">https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Rank report uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.  Ranking information for each report that's been analyzed is then stored in Redis, so each report only gets scraped a single time.</p>
+           <p>Input a link to the front page of a warcraft logs report, hit submit, and wait for the results. The url of the log should look something like <a href="https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF" target="_blank">https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Rank Report uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.  Ranking information for each report that's been analyzed is then stored in Redis, so each report only gets scraped a single time.</p>
         </div>
       
       </div>
@@ -75,11 +75,10 @@
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="static/js/spin.min.js"></script>
-<script src="static/js/ladda.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 
 <script>
            Ladda.bind( '.ladda-button', { timeout: 25000 } );
 </script>
-
+</body>
+</html>
