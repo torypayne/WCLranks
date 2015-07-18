@@ -27,6 +27,10 @@ def report():
 	return render_template("report.html", boss_list=boss_list, rankings=rankings, simple=simple_boss_list)
 
 
+@app.route("/about")
+def about():
+	return render_template("about.html")
+
 
 
 if __name__ == "__main__":

@@ -1,0 +1,28 @@
+.uncommon {
+  	color: rgb(30, 255, 0);
+  	font-weight: bold;
+}
+
+.common{
+	color: #666;
+	font-weight: bold;
+}
+
+.rare{
+	color: rgb(0, 112, 255);
+	font-weight: bold;
+}
+
+.epic{
+	color: rgb(163, 53, 238);
+	font-weight: bold;
+}
+
+.legendary{
+	color: rgb(255, 128, 0);
+	font-weight: bold;
+}
+
+.icons{
+	height: 25px;
+}
