@@ -13,7 +13,7 @@ def find_boss_fights(r, log_id):
 	fights = r["fights"]
 	for i in fights:
 		if i["boss"] != 0:
-			if i["bossPercentage"] == 0:
+			if i["kill"] == True:
 				boss_dict = {}
 				boss_dict["boss_id"] = i["boss"]
 				boss_dict["fight_id"] = i["id"]
@@ -24,6 +24,7 @@ def find_boss_fights(r, log_id):
 
 def scrape_rankings(kills):
 	rankings = {}
+	non_kill = []
 	rankings["tank"] = {}
 	rankings["dps"] = {}
 	rankings["hps"] = {}
