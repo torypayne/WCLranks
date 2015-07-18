@@ -35,7 +35,7 @@
           <h3 class="panel-title">How does this work?</h3>
         </div>
         <div class="panel-body">
-           <p>Input a link to the front page of a warcraft logs report, the url should look something like <a>https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Rank report uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.</p>
+           <p>Input a link to the front page of a warcraft logs report, the url should look something like <a>https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Rank report uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.  Ranking information for each report that's been analyzed is then stored in Redis, so each report only gets scraped a single time.</p>
         </div>
       
       </div>
@@ -47,8 +47,8 @@
         
         <div class="panel-body">
             <p>Make sure the link you're putting in is to the front page of the WCL report.  You can also directly put in the sixteen character log ID.  As an example, for the log <a>https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>, the log id is h3pHANjvGmayDKXF.</p>
-            <p>Currently, Rank Report only supports reports that have advanced combat logging enabled.  I'm working on expanding it to include all types of reports.</p>
-            <p>If you have an issue that's not covered by either of the above, send a copy of the WCL report you're trying to analyze to notputzing @ gmail.com. I can try to take a look and see what might be driving the error.</p>
+
+            <p>If you have an issue that's not covered above, send a copy of the WCL report you're trying to analyze to notputzing @ gmail.com. I can try to take a look and see what might be driving the error.</p>
         </div>
       
       </div>
