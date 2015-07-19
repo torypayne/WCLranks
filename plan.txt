@@ -96,6 +96,8 @@ Fight id{
 }
 
 
+guildies = ["Putz", "Slushies", "VV", "Phys", "Scoob", "Helly", "Envy", "Emmers", "DW", "A2M"]
+
 To do at some point: get class icons
 
 

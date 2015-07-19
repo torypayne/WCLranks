@@ -1,7 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
 # import urllib3.contrib.pyopenssl
+import config
 
+
+# r = redis.from_url(config.REDIS_URL)
 
 # urllib3.contrib.pyopenssl.inject_into_urllib3()
 
@@ -18,18 +21,18 @@ import requests
 
 # https://www.warcraftlogs.com/reports/byHGWvkqDT8d3CXV#fight=3&type=healing&source=4
 
-r = requests.get("https://www.warcraftlogs.com/reports/byHGWvkqDT8d3CXV#fight=3&type=healing&source=4", verify=True)
-data = r.text
-soup = BeautifulSoup(data, "html.parser")
-# print soup
-rows = soup.findAll('ul', attrs={'id':'filter-fight-boss-dropdown'})
-for row in rows:
-		print row
+# r = requests.get("https://www.warcraftlogs.com/reports/byHGWvkqDT8d3CXV#fight=3&type=healing&source=4", verify=True)
+# data = r.text
+# soup = BeautifulSoup(data, "html.parser")
+# # print soup
+# rows = soup.findAll('ul', attrs={'id':'filter-fight-boss-dropdown'})
+# for row in rows:
+# 		print row
 
 
-s = soup.findAll("table")[3]
-for row in s.findAll("tr")[1:]
-	print row.findAll("td")[4]["a"]
+# s = soup.findAll("table")[3]
+# for row in s.findAll("tr")[1:]
+# 	print row.findAll("td")[4]["a"]
 
 
 # https://www.warcraftlogs.com/rankings/report_rankings_for_fight/ + log id + fight + boss ID

@@ -26,22 +26,27 @@ def index():
 def report():
 	report = request.args.get("report")
 	report = report[-16:]
+	# try:
 	try:
-		try:
-			analyzed = r.hgetall(report)
-			boss_list = analyzed["kills"]
-			rankings = analyzed["details"]
-			boss_list = ast.literal_eval(boss_list)
-			rankings = ast.literal_eval(rankings)
-			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
-		except:
-			analyzed = model.analyze(report)
-			boss_list = analyzed["kills"]
-			rankings = analyzed["details"]
-			r.hmset(report, analyzed)
-			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		analyzed = r.hgetall(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		boss_list = ast.literal_eval(boss_list)
+		rankings = ast.literal_eval(rankings)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 	except:
-		return render_template("badlog.html")
+		analyzed = model.analyze(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		r.hmset(report, analyzed)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+	# except:
+	# 	return render_template("badlog.html")
+
+@app.route("/guildcalendar")
+def guild_calendar():
+	return render_template("guild_calendar.html")
+
 
 @app.route("/about")
 def about():

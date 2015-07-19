@@ -40,6 +40,7 @@ def scrape_rankings(kills):
 	rankings["guild"]["speed"]["duration"] = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
+		print kill["url"]
 		soup = BeautifulSoup(r.text, "html5lib")
 		data = dps_rankings(soup, rankings, kill["boss_id"])
 		data = hps_rankings(soup, rankings, kill["boss_id"])
@@ -267,4 +268,45 @@ def analyze(log_id):
 	report = {"kills": kills, "details": details}
 	return report
 
+
+def is_empty(any_structure):
+    if any_structure:
+        return False
+    else:
+        return True
+
+def guild_logs(guild_id):
+	import redis
+	try:
+		r = redis.from_url(os.environ.get('REDIS_URL'))
+	except:
+		import config
+		r = redis.from_url(config.REDIS_URL)
+	guild_logs = {}
+	response = requests.get("https://www.warcraftlogs.com/guilds/calendarfeed/"+str(guild_id)+"/0?start=2015-07-01&end=2015-08-10")
+	response = json.loads(response.text)
+	for log in response:
+		log_id = log["url"]
+		log_id = log_id[-16:]
+		guild_logs[log_id] = {}
+		guild_logs[log_id]["date"] = log["start"]
+		guild_logs[log_id]["title"] = log["title"]
+	for report in guild_logs.iterkeys():
+		try:
+			analyzed = r.hgetall(report)
+			if is_empty(analyzed) == True:
+				analyzed = analyze(report)
+				boss_list = analyzed["kills"]
+				rankings = analyzed["details"]
+				guild_name = rankings["guild_name"]
+				r.hmset(report, analyzed)
+		except:
+			pass
+	try:
+		guild_logs["guild_name"] = guild_name.strip()
+	except:
+		guild_logs["guild_name"] = "Unknown"
+	guild_code = "guild"+str(guild_id)
+	r.hmset("guild"+str(guild_id), guild_logs)
+	return guild_logs
 
