@@ -27,25 +27,34 @@ def report():
 	report = request.args.get("report")
 	report = report[-16:]
 	try:
-		analyzed = r.hgetall(report)
-		boss_list = analyzed["kills"]
-		rankings = analyzed["details"]
-		boss_list = ast.literal_eval(boss_list)
-		rankings = ast.literal_eval(rankings)
-		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		try:
+			analyzed = r.hgetall(report)
+			boss_list = analyzed["kills"]
+			rankings = analyzed["details"]
+			boss_list = ast.literal_eval(boss_list)
+			rankings = ast.literal_eval(rankings)
+			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		except:
+			analyzed = model.analyze(report)
+			boss_list = analyzed["kills"]
+			rankings = analyzed["details"]
+			r.hmset(report, analyzed)
+			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 	except:
-		analyzed = model.analyze(report)
-		boss_list = analyzed["kills"]
-		rankings = analyzed["details"]
-		r.hmset(report, analyzed)
-		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
-
+		return render_template("badlog.html")
 
 @app.route("/about")
 def about():
 	return render_template("about.html")
 
+@app.route("/badlog")
+def badlog():
+	return render_template("badlog.html")
 
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 if __name__ == "__main__":
 	app.run(debug = True)

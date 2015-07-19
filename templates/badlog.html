@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Rank Report - Get all the ranks from your Warcraft Logs Reports</title>
+<link rel="stylesheet" href="static/css/cyborg.bootstrap.min.css">
+
+<link rel="stylesheet" href="static/css/main.css">
+<link rel="stylesheet" href="static/css/ladda-themeless.min.css">
+
+<link rel="shortcut icon" href="static/favicon.ico">
+
+</head>
+<body>
+<div class="collapse navbar-collapse navbar-inverse">
+	<div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">Rank Report</a>
+                  </div>
+                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
+                      <li><a href="/about">About</a></li>
+                    </ul>
+                  </div>
+
+<br>
+<div class="container">
+           <form action="/report">
+    <div class="panel panel-danger">
+         <div class="panel-heading"> <h2>Something's Wrong</h2>
+          </div>
+        <div class="panel-body">
+          <br>
+           <p>Listen, log.  I wanted to evaluate your rankings.  Process them quickly.  Give you a one page overview of how everyone did on every fight.  But as things stand, it's just not going to happen.  I'd say it's not you and it's me, but it's possible it you.  Like:</p>
+
+            <ul>
+            <li>Are you a private log? There can't be any secrets between us.  I can't analyze something I can't see.</li>
+            <li>Maybe you're just old fashioned, from a previous raid.  I like my logs hip, trendy, and from HFC.</li>
+            <li>Did you not give me a clean url? You know I hate messes.  You can try putting in just the 16 digit log ID</li>
+          </ul>
+
+          But, you know, maybe it's me.  You can always <a href="/about">shoot me a line</a> with questions, or you can just:
+           </p>
+
+        <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Link to a Warcraft Logs report - example: https://www.warcraftlogs.com/reports/GAXpqDLzvmn2ZMxy" name="report" id="report">
+                    <span class="input-group-btn">
+                      <button class="btn btn-primary ladda-button" type="submit" data-style="slide-left"><span class="ladda-label">Try Again</span></button>
+                    </span>
+                  </div>
+          <br>
+
+      
+      </div>
+</div>
+
+</div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+<script>
+           Ladda.bind( '.ladda-button', { timeout: 25000 } );
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65262956-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
