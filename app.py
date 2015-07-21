@@ -47,6 +47,9 @@ def report():
 def guild_calendar():
 	return render_template("guild_calendar.html")
 
+@app.route("/guild_list")
+def guild_list
+	return render_template("guild_list.html")
 
 @app.route("/about")
 def about():
@@ -55,7 +58,6 @@ def about():
 @app.route("/badlog")
 def badlog():
 	return render_template("badlog.html")
-
 
 @app.errorhandler(404)
 def page_not_found(e):
