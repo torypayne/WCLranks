@@ -48,7 +48,7 @@ def guild_calendar():
 	return render_template("guild_calendar.html")
 
 @app.route("/guild_list")
-def guild_list
+def guild_list():
 	return render_template("guild_list.html")
 
 @app.route("/about")
