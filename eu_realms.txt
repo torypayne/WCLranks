@@ -1,0 +1,266 @@
+Aegwynn	(PvP)	High	German	
+Aerie Peak	(PvE)	Medium	English	
+Agamaggan	(PvP)	Medium	English	
+Aggra (Português)	(PvP)	High	English	
+Aggramar	(PvE)	Medium	English	
+Ahn'Qiraj	(PvP)	Medium	English	
+Al'Akir	(PvP)	Medium	English	
+Alexstrasza	(PvE)	Low	German	
+Alleria	(PvE)	Medium	German	
+Alonsus	(PvE)	Medium	English	
+Aman'Thul	(PvE)	Low	German	
+Ambossar	(PvE)	Low	German	
+Anachronos	(PvE)	Medium	English	
+Anetheron	(PvP)	Low	German	
+Antonidas	(PvE)	Medium	German	
+Anub'arak	(PvP)	Low	German	
+Arak-arahm	(PvP)	Medium	French	
+Arathi	(PvP)	Medium	French	
+Arathor	(PvE)	Medium	English	
+Archimonde	(PvP)	High	French	
+Area 52	(PvE)	Low	German	
+Argent Dawn	(RP)	High	English	
+Arthas	(PvP)	Medium	German	
+Arygos	(PvE)	Low	German	
+Ashenvale	(PvP)	Medium	Russian	
+Aszune	(PvE)	Medium	English	
+Auchindoun	(PvP)	Medium	English	
+Azjol-Nerub	(PvE)	Medium	English	
+Azshara	(PvP)	Low	German	
+Azuregos	(PvE)	Medium	Russian	
+Azuremyst	(PvE)	Medium	English	
+Baelgun	(PvE)	Low	German	
+Balnazzar	(PvP)	Medium	English	
+Blackhand	(PvE)	Medium	German	
+Blackmoore	(PvP)	High	German	
+Blackrock	(PvP)	Medium	German	
+Blackscar	(PvP)	Medium	Russian	
+Blade's Edge	(PvE)	Medium	English	
+Bladefist	(PvP)	Medium	English	
+Bloodfeather	(PvP)	Medium	English	
+Bloodhoof	(PvE)	Medium	English	
+Bloodscalp	(PvP)	Medium	English	
+Blutkessel	(PvP)	Medium	German	
+Booty Bay	(PvP)	Low	Russian	
+Borean Tundra	(PvE)	Medium	Russian	
+Boulderfist	(PvP)	Medium	English	
+Bronze Dragonflight	(PvE)	Medium	English	
+Bronzebeard	(PvE)	Medium	English	
+Burning Blade	(PvP)	Medium	English	
+Burning Steppes	(PvP)	Medium	English	
+C'Thun	(PvP)	Medium	Spanish	
+Chamber of Aspects	(PvE)	Medium	English	
+Chants éternels	(PvE)	Medium	French	
+Cho'gall	(PvP)	Medium	French	
+Chromaggus	(PvP)	Medium	English	
+Colinas Pardas	(PvE)	High	Spanish	
+Confrérie du Thorium	(RP)	Medium	French	
+Conseil des Ombres	(RP PvP)	Medium	French	
+Crushridge	(PvP)	Medium	English	
+Culte de la Rive noire	(RP PvP)	Medium	French	
+Daggerspine	(PvP)	Medium	English	
+Dalaran	(PvE)	Medium	French	
+Dalvengyr	(PvP)	Low	German	
+Darkmoon Faire	(RP)	Medium	English	
+Darksorrow	(PvP)	Medium	English	
+Darkspear	(PvE)	Medium	English	
+Das Konsortium	(RP PvP)	Medium	German	
+Das Syndikat	(RP PvP)	Medium	German	
+Deathguard	(PvP)	Medium	Russian	
+Deathweaver	(PvP)	Low	Russian	
+Deathwing	(PvP)	High	English	
+Deepholm	(PvP)	Low	Russian	
+Defias Brotherhood	(RP PvP)	High	English	
+Dentarg	(PvP)	High	English	
+Der abyssische Rat	(RP PvP)	Medium	German	
+Der Mithrilorden	(RP)	Low	German	
+Der Rat von Dalaran	(RP)	Low	German	
+Destromath	(PvP)	Medium	German	
+Dethecus	(PvP)	Medium	German	
+Die Aldor	(RP)	Medium	German	
+Die Arguswacht	(RP PvP)	Medium	German	
+Die ewige Wacht	(RP)	Low	German	
+Die Nachtwache	(RP)	Low	German	
+Die Silberne Hand	(RP)	Low	German	
+Die Todeskrallen	(RP PvP)	Medium	German	
+Doomhammer	(PvE)	Medium	English	
+Draenor	(PvE)	High	English	
+Dragonblight	(PvE)	Medium	English	
+Dragonmaw	(PvP)	Medium	English	
+Drak'thul	(PvP)	Medium	English	
+Drek'Thar	(PvE)	Medium	French	
+Dun Modr	(PvP)	High	Spanish	
+Dun Morogh	(PvE)	Low	German	
+Dunemaul	(PvP)	Medium	English	
+Durotan	(PvE)	Low	German	
+Earthen Ring	(RP)	Medium	English	
+Echsenkessel	(PvP)	Medium	German	
+Eitrigg	(PvE)	Low	French	
+Eldre'Thalas	(PvP)	Medium	French	
+Elune	(PvE)	Medium	French	
+Emerald Dream	(PvE)	Medium	English	
+Emeriss	(PvP)	Medium	English	
+Eonar	(PvE)	Medium	English	
+Eredar	(PvP)	Medium	German	
+Eversong	(PvE)	Medium	Russian	
+Executus	(PvP)	Medium	English	
+Exodar	(PvE)	High	Spanish	
+Festung der Stürme	(PvP)	Low	German	
+Fordragon	(PvE)	Medium	Russian	
+Forscherliga	(RP)	Low	German	
+Frostmane	(PvP)	High	English	
+Frostmourne	(PvP)	Low	German	
+Frostwhisper	(PvP)	Medium	English	
+Frostwolf	(PvP)	Medium	German	
+Galakrond	(PvE)	Medium	Russian	
+Garona	(PvP)	Medium	French	
+Garrosh	(PvE)	Medium	German	
+Genjuros	(PvP)	Medium	English	
+Ghostlands	(PvE)	Medium	English	
+Gilneas	(PvE)	Low	German	
+Goldrinn	(PvE)	Medium	Russian	
+Gordunni	(PvP)	High	Russian	
+Gorgonnash	(PvP)	Medium	German	
+Greymane	(PvP)	Medium	Russian	
+Grim Batol	(PvP)	High	English	
+Grom	(PvP)	Low	Russian	
+Gul'dan	(PvP)	Low	German	
+Hakkar	(PvP)	Medium	English	
+Haomarush	(PvP)	Medium	English	
+Hellfire	(PvE)	Medium	English	
+Hellscream	(PvE)	Medium	English	
+Howling Fjord	(PvP)	Medium	Russian	
+Hyjal	(PvE)	High	French	
+Illidan	(PvP)	Medium	French	
+Internal Record 3713	(PvP)	High	English	
+Jaedenar	(PvP)	Medium	English	
+Kael'thas	(PvP)	Medium	French	
+Karazhan	(PvP)	High	English	
+Kargath	(PvE)	Low	German	
+Kazzak	(PvP)	High	English	
+Kel'Thuzad	(PvP)	Medium	German	
+Khadgar	(PvE)	Medium	English	
+Khaz Modan	(PvE)	Medium	French	
+Khaz'goroth	(PvE)	Low	German	
+Kil'jaeden	(PvP)	Low	German	
+Kilrogg	(PvE)	Medium	English	
+Kirin Tor	(RP)	Medium	French	
+Kor'gall	(PvP)	Medium	English	
+Krag'jin	(PvP)	Low	German	
+Krasus	(PvE)	Low	French	
+Kul Tiras	(PvE)	Medium	English	
+Kult der Verdammten	(RP PvP)	Medium	German	
+La Croisade écarlate	(RP PvP)	Medium	French	
+Laughing Skull	(PvP)	Medium	English	
+Les Clairvoyants	(RP)	Medium	French	
+Les Sentinelles	(RP)	Medium	French	
+Lich King	(PvP)	Medium	Russian	
+Lightbringer	(PvE)	High	English	
+Lightning's Blade	(PvP)	High	English	
+Lordaeron	(PvE)	Low	German	
+Los Errantes	(PvE)	High	Spanish	
+Lothar	(PvE)	Low	German	
+Madmortem	(PvE)	Low	German	
+Magtheridon	(PvE)	High	English	
+Mal'Ganis	(PvP)	Medium	German	
+Malfurion	(PvE)	Low	German	
+Malorne	(PvE)	Medium	German	
+Malygos	(PvE)	Low	German	
+Mannoroth	(PvP)	Medium	German	
+Marécage de Zangar	(PvE)	Medium	French	
+Mazrigos	(PvE)	High	English	
+Medivh	(PvE)	Medium	French	
+Minahonda	(PvE)	High	Spanish	
+Moonglade	(RP)	Medium	English	
+Mug'thol	(PvP)	Medium	German	
+Nagrand	(PvE)	Medium	English	
+Nathrezim	(PvP)	Low	German	
+Naxxramas	(PvP)	Medium	French	
+Nazjatar	(PvP)	Low	German	
+Nefarian	(PvP)	Medium	German	
+Nemesis	(PvP)	Medium	Italian	
+Neptulon	(PvP)	Medium	English	
+Ner'zhul	(PvP)	Medium	French	
+Nera'thor	(PvP)	Medium	German	
+Nethersturm	(PvE)	Low	German	
+Nordrassil	(PvE)	Medium	English	
+Norgannon	(PvE)	Low	German	
+Nozdormu	(PvE)	Medium	German	
+Onyxia	(PvP)	Medium	German	
+Outland	(PvP)	High	English	
+Perenolde	(PvE)	Low	German	
+Pozzo dell'Eternità	(PvE)	Medium	Italian	
+Proudmoore	(PvE)	Low	German	
+Quel'Thalas	(PvE)	Medium	English	
+Ragnaros	(PvP)	High	English	
+Rajaxx	(PvP)	Low	German	
+Rashgarroth	(PvP)	Medium	French	
+Ravencrest	(PvP)	High	English	
+Ravenholdt	(RP PvP)	High	English	
+Razuvious	(PvP)	Low	Russian	
+Rexxar	(PvE)	Medium	German	
+Runetotem	(PvE)	Medium	English	
+Sanguino	(PvP)	High	Spanish	
+Sargeras	(PvP)	Medium	French	
+Saurfang	(PvE)	Medium	English	
+Scarshield Legion	(RP PvP)	High	English	
+Sen'jin	(PvE)	Low	German	
+Shadowsong	(PvE)	Medium	English	
+Shattered Halls	(PvP)	Medium	English	
+Shattered Hand	(PvP)	Medium	English	
+Shattrath	(PvE)	Medium	German	
+Shen'dralar	(PvP)	High	Spanish	
+Silvermoon	(PvE)	High	English	
+Sinstralis	(PvP)	Medium	French	
+Skullcrusher	(PvP)	Medium	English	
+Soulflayer	(PvP)	High	Russian	
+Spinebreaker	(PvP)	Medium	English	
+Sporeggar	(RP PvP)	High	English	
+Steamwheedle Cartel	(RP)	Medium	English	
+Stormrage	(PvE)	Medium	English	
+Stormreaver	(PvP)	Medium	English	
+Stormscale	(PvP)	High	English	
+Sunstrider	(PvP)	Medium	English	
+Sylvanas	(PvP)	High	English	
+Taerar	(PvP)	Medium	German	
+Talnivarr	(PvP)	Medium	English	
+Tarren Mill	(PvP)	High	English	
+Teldrassil	(PvE)	Low	German	
+Temple noir	(PvP)	Medium	French	
+Terenas	(PvE)	Medium	English	
+Terokkar	(PvE)	Medium	English	
+Terrordar	(PvP)	Medium	German	
+The Maelstrom	(PvP)	High	English	
+The Sha'tar	(RP)	Medium	English	
+The Venture Co	(RP PvP)	High	English	
+Theradras	(PvP)	Medium	German	
+Thermaplugg	(PvP)	Low	Russian	
+Thrall	(PvE)	Medium	German	
+Throk'Feroth	(PvP)	Medium	French	
+Thunderhorn	(PvE)	Medium	English	
+Tichondrius	(PvE)	Low	German	
+Tirion	(PvE)	Low	German	
+Todeswache	(RP)	Low	German	
+Trollbane	(PvP)	Medium	English	
+Turalyon	(PvE)	Medium	English	
+Twilight's Hammer	(PvP)	Medium	English	
+Twisting Nether	(PvP)	High	English	
+Tyrande	(PvE)	High	Spanish	
+Uldaman	(PvE)	Medium	French	
+Ulduar	(PvE)	Low	German	
+Uldum	(PvP)	High	Spanish	
+Un'Goro	(PvE)	Low	German	
+Varimathras	(PvE)	Medium	French	
+Vashj	(PvP)	Medium	English	
+Vek'lor	(PvP)	Medium	German	
+Vek'nilash	(PvE)	Medium	English	
+Vol'jin	(PvE)	Medium	French	
+Wildhammer	(PvE)	Medium	English	
+Wrathbringer	(PvP)	Medium	German	
+Xavius	(PvP)	Medium	English	
+Ysera	(PvE)	Medium	German	
+Ysondre	(PvP)	Medium	French	
+Zenedar	(PvP)	Medium	English	
+Zirkel des Cenarius	(RP)	Low	German	
+Zul'jin	(PvP)	High	Spanish	
+Zuluhed	(PvP)	Low	German

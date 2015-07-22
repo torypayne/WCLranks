@@ -5,6 +5,7 @@ import model
 import os
 import redis
 import ast
+import datetime
 
 app = Flask(__name__)
 try:
@@ -26,30 +27,53 @@ def index():
 def report():
 	report = request.args.get("report")
 	report = report[-16:]
-	# try:
 	try:
-		analyzed = r.hgetall(report)
-		boss_list = analyzed["kills"]
-		rankings = analyzed["details"]
-		boss_list = ast.literal_eval(boss_list)
-		rankings = ast.literal_eval(rankings)
-		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		try:
+			analyzed = r.hgetall(report)
+			boss_list = analyzed["kills"]
+			rankings = analyzed["details"]
+			boss_list = ast.literal_eval(boss_list)
+			rankings = ast.literal_eval(rankings)
+			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		except:
+			analyzed = model.analyze(report)
+			boss_list = analyzed["kills"]
+			rankings = analyzed["details"]
+			r.hmset(report, analyzed)
+			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 	except:
-		analyzed = model.analyze(report)
-		boss_list = analyzed["kills"]
-		rankings = analyzed["details"]
-		r.hmset(report, analyzed)
-		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
-	# except:
-	# 	return render_template("badlog.html")
+		return render_template("badlog.html")
 
 @app.route("/guildcalendar")
 def guild_calendar():
 	return render_template("guild_calendar.html")
 
+@app.route("/guild_reports/<guild_name>/<guild_server>/<guild_region>")
+def guild_reports(guild_name, guild_server, guild_region):
+	# guild_name = request.args.get("guild_name")
+	# guild_server = request.args.get("guild_server")
+	# guild_region = request.args.get("guild_region")
+	guild = model.logs_new_guild(guild_name, guild_server, guild_region)
+	guild = model.analyze_guild_logs(guild)
+	return render_template("guild_list.html", guild=guild)
+
 @app.route("/guild_list")
 def guild_list():
-	return render_template("guild_list.html")
+	guild_name = request.args.get("guild").title()
+	guild_server = request.args.get("server").title()
+	guild_region = request.args.get("region").upper()
+	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+	redis_guild = r.hgetall(guild_id_string)
+	if model.is_empty(redis_guild) == True:
+		guild = model.logs_new_guild(guild_name, guild_server, guild_region)
+	else:
+		print redis_guild
+		guild = {}
+		guild["guild_name"] = redis_guild["guild_name"]
+		guild["guild_server"] = redis_guild["guild_server"]
+		guild["guild_region"] = redis_guild["guild_region"]
+		guild["logs"] = eval(redis_guild["logs"])
+	return render_template("guild_list.html", guild=guild)
 
 @app.route("/about")
 def about():

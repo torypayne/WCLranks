@@ -2,6 +2,15 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+import redis
+import time
+import datetime
+
+try:
+	r = redis.from_url(os.environ.get('REDIS_URL'))
+except:
+	import config
+	r = redis.from_url(config.REDIS_URL)
 
 def get_fights_from_log_id(log_id):
 	r = requests.get("https://www.warcraftlogs.com/reports/fights_and_participants/"+log_id+"/0")
@@ -275,38 +284,57 @@ def is_empty(any_structure):
     else:
         return True
 
-def guild_logs(guild_id):
-	import redis
-	try:
-		r = redis.from_url(os.environ.get('REDIS_URL'))
-	except:
-		import config
-		r = redis.from_url(config.REDIS_URL)
-	guild_logs = {}
-	response = requests.get("https://www.warcraftlogs.com/guilds/calendarfeed/"+str(guild_id)+"/0?start=2015-07-01&end=2015-08-10")
+def logs_new_guild(guild_name, guild_server, guild_region):
+	guild = {}
+	guild["guild_name"] = guild_name
+	guild["guild_server"] = guild_server
+	guild["guild_region"] = guild_region
+	guild["logs"] = []
+	start_time = 1435734000000
+	response = requests.get("https://www.warcraftlogs.com:443/v1/reports/guild/"+guild_name+"/"+guild_server+"/"+guild_region+"?start="+str(start_time)+"&api_key=9457bbf774422ab14b5625efb2b35e36")
 	response = json.loads(response.text)
+	# print response
 	for log in response:
-		log_id = log["url"]
-		log_id = log_id[-16:]
-		guild_logs[log_id] = {}
-		guild_logs[log_id]["date"] = log["start"]
-		guild_logs[log_id]["title"] = log["title"]
-	for report in guild_logs.iterkeys():
+		# print log
+		# print log["zone"]
+		if log["zone"] == 8:
+			new_log = {}
+			new_log["log_id"] = log["id"]
+			new_log["title"] = log["title"]
+			new_log["start"] = log["start"]/1000
+			new_log["date"] = datetime.date.fromtimestamp(log["start"]/1000)
+			new_log["owner"] = log["owner"]
+			guild["logs"].append(new_log)
+	guild["last_checked"] = int(time.time())
+	guild["last_checked_dt"] = datetime.datetime.fromtimestamp(guild["last_checked"])
+	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+	guild = analyze_guild_logs(guild)
+	r.hmset(guild_id_string, guild)
+	return guild
+
+def analyze_guild_logs(guild):
+	for report in guild["logs"]:
+		# print report
 		try:
-			analyzed = r.hgetall(report)
+			# "About to check if I have a report"
+			analyzed = r.hgetall(report["log_id"])
 			if is_empty(analyzed) == True:
-				analyzed = analyze(report)
+				analyzed = analyze(report["log_id"])
 				boss_list = analyzed["kills"]
 				rankings = analyzed["details"]
 				guild_name = rankings["guild_name"]
 				r.hmset(report, analyzed)
+			# 	print "I analyzed a report"
+			# else:
+			# 	print "I already had it"
 		except:
-			pass
-	try:
-		guild_logs["guild_name"] = guild_name.strip()
-	except:
-		guild_logs["guild_name"] = "Unknown"
-	guild_code = "guild"+str(guild_id)
-	r.hmset("guild"+str(guild_id), guild_logs)
-	return guild_logs
+			report["validity"] = "bad"
+			bad_logs = True
+			# print "I set a report to bad"
+	if bad_logs == True:
+		guild["logs"][:] = [d for d in guild["logs"] if d.get('validity') != "bad"]
+		# print "I tried to delete bad logs"
+	return guild
+
+
 
