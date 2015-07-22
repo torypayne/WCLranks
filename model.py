@@ -8,9 +8,10 @@ import datetime
 
 try:
 	r = redis.from_url(os.environ.get('REDIS_URL'))
-# except:
-# 	import config
-# 	r = redis.from_url(config.REDIS_URL)
+except:
+	pass
+	# import config
+	# r = redis.from_url(config.REDIS_URL)
 
 def get_fights_from_log_id(log_id):
 	r = requests.get("https://www.warcraftlogs.com/reports/fights_and_participants/"+log_id+"/0")
