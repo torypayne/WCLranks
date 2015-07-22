@@ -95,7 +95,7 @@ def update_guild_list():
 	guild_name = request.args.get("guild").title()
 	guild_server = request.args.get("server").title()
 	guild_region = request.args.get("region").upper()
-	guild = model.refresh_guild_logs(guild_name, guild_server, guild_region)
+	guild = model.refresh_guild_logs(guild_name, guild_server, guild_region, r)
 	return render_template("guild_list.html", guild=guild)
 
 @app.route("/about")

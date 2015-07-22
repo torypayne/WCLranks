@@ -335,12 +335,7 @@ def analyze_guild_logs(guild, r):
 		# print "I tried to delete bad logs"
 	return guild
 
-def refresh_guild_logs(guild_name, guild_server, guild_region):
-	try:
-		r = redis.from_url(os.environ.get('REDIS_URL'))
-	except:
-		import config
-		r = redis.from_url(config.REDIS_URL)
+def refresh_guild_logs(guild_name, guild_server, guild_region, r):
 	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
 	redis_guild = r.hgetall(guild_id_string)
 	guild = {}
@@ -371,7 +366,7 @@ def refresh_guild_logs(guild_name, guild_server, guild_region):
 	r.hmset(guild_id_string, guild)
 	return guild
 
-def last_log_from_guild(guild_name, guild_server, guild_region):
+def last_log_from_guild(guild_name, guild_server, guild_region, r):
 	try:
 		r = redis.from_url(os.environ.get('REDIS_URL'))
 	except:
