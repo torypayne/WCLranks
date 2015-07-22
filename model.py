@@ -6,12 +6,6 @@ import redis
 import time
 import datetime
 
-try:
-	r = redis.from_url(os.environ.get('REDIS_URL'))
-except:
-	pass
-	# import config
-	# r = redis.from_url(config.REDIS_URL)
 
 def get_fights_from_log_id(log_id):
 	r = requests.get("https://www.warcraftlogs.com/reports/fights_and_participants/"+log_id+"/0")
@@ -286,6 +280,11 @@ def is_empty(any_structure):
         return True
 
 def logs_new_guild(guild_name, guild_server, guild_region):
+	try:
+		r = redis.from_url(os.environ.get('REDIS_URL'))
+	except:
+		import config
+		r = redis.from_url(config.REDIS_URL)
 	guild = {}
 	guild["guild_name"] = guild_name
 	guild["guild_server"] = guild_server
@@ -309,11 +308,11 @@ def logs_new_guild(guild_name, guild_server, guild_region):
 	guild["last_checked"] = int(time.time())
 	guild["last_checked_dt"] = datetime.datetime.fromtimestamp(guild["last_checked"])
 	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
-	guild = analyze_guild_logs(guild)
+	guild = analyze_guild_logs(guild, r)
 	r.hmset(guild_id_string, guild)
 	return guild
 
-def analyze_guild_logs(guild):
+def analyze_guild_logs(guild, r):
 	for report in guild["logs"]:
 		# print report
 		try:
