@@ -90,6 +90,14 @@ def guild_list():
 		guild["logs"] = eval(redis_guild["logs"])
 	return render_template("guild_list.html", guild=guild)
 
+@app.route("/guild_list", methods=["POST"])
+def update_guild_list():
+	guild_name = request.args.get("guild").title()
+	guild_server = request.args.get("server").title()
+	guild_region = request.args.get("region").upper()
+	guild = model.refresh_guild_logs(guild_name, guild_server, guild_region)
+	return render_template("guild_list.html", guild=guild)
+
 @app.route("/about")
 def about():
 	return render_template("about.html")

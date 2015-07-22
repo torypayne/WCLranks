@@ -44,7 +44,7 @@ def scrape_rankings(kills):
 	rankings["guild"]["speed"]["duration"] = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
-		# print kill["url"]
+		print kill["url"]
 		soup = BeautifulSoup(r.text, "html5lib")
 		data = dps_rankings(soup, rankings, kill["boss_id"])
 		data = hps_rankings(soup, rankings, kill["boss_id"])
@@ -295,8 +295,6 @@ def logs_new_guild(guild_name, guild_server, guild_region):
 	response = json.loads(response.text)
 	# print response
 	for log in response:
-		# print log
-		# print log["zone"]
 		if log["zone"] == 8:
 			new_log = {}
 			new_log["log_id"] = log["id"]
@@ -313,6 +311,7 @@ def logs_new_guild(guild_name, guild_server, guild_region):
 	return guild
 
 def analyze_guild_logs(guild, r):
+	bad_logs = False
 	for report in guild["logs"]:
 		# print report
 		try:
@@ -336,5 +335,74 @@ def analyze_guild_logs(guild, r):
 		# print "I tried to delete bad logs"
 	return guild
 
+def refresh_guild_logs(guild_name, guild_server, guild_region):
+	try:
+		r = redis.from_url(os.environ.get('REDIS_URL'))
+	except:
+		import config
+		r = redis.from_url(config.REDIS_URL)
+	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+	redis_guild = r.hgetall(guild_id_string)
+	guild = {}
+	guild["guild_name"] = redis_guild["guild_name"]
+	guild["guild_server"] = redis_guild["guild_server"]
+	guild["guild_region"] = redis_guild["guild_region"]
+	guild["logs"] = eval(redis_guild["logs"])
+	guild["last_checked"] = redis_guild["last_checked"]*1000
+	start_time = guild["last_checked"]
+	try:
+		response = requests.get("https://www.warcraftlogs.com:443/v1/reports/guild/"+guild_name+"/"+guild_server+"/"+guild_region+"?start="+str(start_time)+"&api_key=9457bbf774422ab14b5625efb2b35e36")
+		response = json.loads(response.text)
+		for log in response:
+			if log["zone"] == 8:
+				new_log = {}
+				new_log["log_id"] = log["id"]
+				analyze(log_id)
+				new_log["title"] = log["title"]
+				new_log["start"] = log["start"]/1000
+				new_log["date"] = datetime.date.fromtimestamp(log["start"]/1000)
+				new_log["owner"] = log["owner"]
+				guild["logs"].append(new_log)
+	except:
+		pass
+	guild["last_checked"] = int(time.time())
+	guild["last_checked_dt"] = datetime.datetime.fromtimestamp(guild["last_checked"])
+	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+	r.hmset(guild_id_string, guild)
+	return guild
+
+def last_log_from_guild(guild_name, guild_server, guild_region):
+	try:
+		r = redis.from_url(os.environ.get('REDIS_URL'))
+	except:
+		import config
+		r = redis.from_url(config.REDIS_URL)
+	guild = {}
+	guild["guild_name"] = guild_name
+	guild["guild_server"] = guild_server
+	guild["guild_region"] = guild_region
+	guild["logs"] = []
+	start_time = 1435734000000
+	end_time = 1437465661000
+	try:
+		response = requests.get("https://www.warcraftlogs.com:443/v1/reports/guild/"+guild_name+"/"+guild_server+"/"+guild_region+"?start="+str(start_time)+"&api_key=9457bbf774422ab14b5625efb2b35e36")
+		response = json.loads(response.text)
+		log_id = response[0]["id"]
+		try:
+			report = analyze(log_id)
+		except:
+			good_log = False
+			for log_dict in response[::-1]:
+				try:
+					log_id = log_dict["id"]
+					report = analyze(log_id)
+					good_log = True
+				except:
+					pass
+				if good_log == True:
+					break
+	except:
+		report = False
+	return report
 
 

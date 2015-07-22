@@ -1,7 +1,7 @@
 realm_list = [{
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -14,7 +14,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525965506
         },
-        "status": true,
+        "status": True,
         "name": "Aegwynn",
         "slug": "aegwynn",
         "battlegroup": "Vengeance",
@@ -24,7 +24,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -37,7 +37,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526530640
         },
-        "status": true,
+        "status": True,
         "name": "Aerie Peak",
         "slug": "aerie-peak",
         "battlegroup": "Vindication",
@@ -47,7 +47,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -60,7 +60,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524692838
         },
-        "status": true,
+        "status": True,
         "name": "Agamaggan",
         "slug": "agamaggan",
         "battlegroup": "Shadowburn",
@@ -70,7 +70,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -83,7 +83,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526532008
         },
-        "status": true,
+        "status": True,
         "name": "Aggramar",
         "slug": "aggramar",
         "battlegroup": "Vindication",
@@ -93,7 +93,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -106,7 +106,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526422702
         },
-        "status": true,
+        "status": True,
         "name": "Akama",
         "slug": "akama",
         "battlegroup": "Reckoning",
@@ -116,7 +116,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -129,7 +129,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526408264
         },
-        "status": true,
+        "status": True,
         "name": "Alexstrasza",
         "slug": "alexstrasza",
         "battlegroup": "Rampage",
@@ -139,7 +139,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -152,7 +152,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526156542
         },
-        "status": true,
+        "status": True,
         "name": "Alleria",
         "slug": "alleria",
         "battlegroup": "Rampage",
@@ -162,7 +162,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -175,7 +175,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191691
         },
-        "status": true,
+        "status": True,
         "name": "Altar of Storms",
         "slug": "altar-of-storms",
         "battlegroup": "Ruin",
@@ -185,7 +185,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -198,7 +198,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526529657
         },
-        "status": true,
+        "status": True,
         "name": "Alterac Mountains",
         "slug": "alterac-mountains",
         "battlegroup": "Ruin",
@@ -208,7 +208,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -221,7 +221,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525910428
         },
-        "status": true,
+        "status": True,
         "name": "Aman'Thul",
         "slug": "amanthul",
         "battlegroup": "AU/NZ Battle Group",
@@ -231,7 +231,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -244,7 +244,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526173986
         },
-        "status": true,
+        "status": True,
         "name": "Andorhal",
         "slug": "andorhal",
         "battlegroup": "Shadowburn",
@@ -254,7 +254,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -267,7 +267,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191936
         },
-        "status": true,
+        "status": True,
         "name": "Anetheron",
         "slug": "anetheron",
         "battlegroup": "Ruin",
@@ -277,7 +277,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -290,7 +290,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525894841
         },
-        "status": true,
+        "status": True,
         "name": "Antonidas",
         "slug": "antonidas",
         "battlegroup": "Cyclone",
@@ -300,7 +300,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -313,7 +313,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525875378
         },
-        "status": true,
+        "status": True,
         "name": "Anub'arak",
         "slug": "anubarak",
         "battlegroup": "Vengeance",
@@ -323,7 +323,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -336,7 +336,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526197378
         },
-        "status": true,
+        "status": True,
         "name": "Anvilmar",
         "slug": "anvilmar",
         "battlegroup": "Ruin",
@@ -346,7 +346,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -359,7 +359,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526585419
         },
-        "status": true,
+        "status": True,
         "name": "Arathor",
         "slug": "arathor",
         "battlegroup": "Reckoning",
@@ -369,7 +369,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -382,7 +382,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524692562
         },
-        "status": true,
+        "status": True,
         "name": "Archimonde",
         "slug": "archimonde",
         "battlegroup": "Shadowburn",
@@ -392,7 +392,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -405,7 +405,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526522996
         },
-        "status": true,
+        "status": True,
         "name": "Area 52",
         "slug": "area-52",
         "battlegroup": "Vindication",
@@ -415,7 +415,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -428,7 +428,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191818
         },
-        "status": true,
+        "status": True,
         "name": "Argent Dawn",
         "slug": "argent-dawn",
         "battlegroup": "Ruin",
@@ -438,7 +438,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -451,7 +451,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526400885
         },
-        "status": true,
+        "status": True,
         "name": "Arthas",
         "slug": "arthas",
         "battlegroup": "Ruin",
@@ -461,7 +461,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -474,7 +474,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526095323
         },
-        "status": true,
+        "status": True,
         "name": "Arygos",
         "slug": "arygos",
         "battlegroup": "Vindication",
@@ -484,7 +484,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -497,7 +497,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526397155
         },
-        "status": true,
+        "status": True,
         "name": "Auchindoun",
         "slug": "auchindoun",
         "battlegroup": "Vindication",
@@ -507,7 +507,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -520,7 +520,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526182217
         },
-        "status": true,
+        "status": True,
         "name": "Azgalor",
         "slug": "azgalor",
         "battlegroup": "Ruin",
@@ -530,7 +530,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -543,7 +543,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526415176
         },
-        "status": true,
+        "status": True,
         "name": "Azjol-Nerub",
         "slug": "azjolnerub",
         "battlegroup": "Cyclone",
@@ -553,7 +553,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -566,7 +566,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526549669
         },
-        "status": true,
+        "status": True,
         "name": "Azralon",
         "slug": "azralon",
         "battlegroup": "Shadowburn",
@@ -576,7 +576,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -589,7 +589,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526182412
         },
-        "status": true,
+        "status": True,
         "name": "Azshara",
         "slug": "azshara",
         "battlegroup": "Ruin",
@@ -599,7 +599,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -612,7 +612,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526177713
         },
-        "status": true,
+        "status": True,
         "name": "Azuremyst",
         "slug": "azuremyst",
         "battlegroup": "Shadowburn",
@@ -622,7 +622,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -635,7 +635,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526409274
         },
-        "status": true,
+        "status": True,
         "name": "Baelgun",
         "slug": "baelgun",
         "battlegroup": "Shadowburn",
@@ -645,7 +645,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -658,7 +658,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526529346
         },
-        "status": true,
+        "status": True,
         "name": "Balnazzar",
         "slug": "balnazzar",
         "battlegroup": "Ruin",
@@ -668,7 +668,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -681,7 +681,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525914324
         },
-        "status": true,
+        "status": True,
         "name": "Barthilas",
         "slug": "barthilas",
         "battlegroup": "AU/NZ Battle Group",
@@ -691,7 +691,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -704,7 +704,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526541602
         },
-        "status": true,
+        "status": True,
         "name": "Black Dragonflight",
         "slug": "black-dragonflight",
         "battlegroup": "Ruin",
@@ -714,7 +714,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -727,7 +727,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526151370
         },
-        "status": true,
+        "status": True,
         "name": "Blackhand",
         "slug": "blackhand",
         "battlegroup": "Rampage",
@@ -737,7 +737,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -750,7 +750,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525988562
         },
-        "status": true,
+        "status": True,
         "name": "Blackrock",
         "slug": "blackrock",
         "battlegroup": "Bloodlust",
@@ -760,7 +760,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -773,7 +773,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525879564
         },
-        "status": true,
+        "status": True,
         "name": "Blackwater Raiders",
         "slug": "blackwater-raiders",
         "battlegroup": "Reckoning",
@@ -783,7 +783,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -796,7 +796,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186848
         },
-        "status": true,
+        "status": True,
         "name": "Blackwing Lair",
         "slug": "blackwing-lair",
         "battlegroup": "Shadowburn",
@@ -806,7 +806,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -819,7 +819,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526401269
         },
-        "status": true,
+        "status": True,
         "name": "Blade's Edge",
         "slug": "blades-edge",
         "battlegroup": "Vindication",
@@ -829,7 +829,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -842,7 +842,7 @@ realm_list = [{
             "status": 0,
             "next": 1437528087974
         },
-        "status": true,
+        "status": True,
         "name": "Bladefist",
         "slug": "bladefist",
         "battlegroup": "Vengeance",
@@ -852,7 +852,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -865,7 +865,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526526798
         },
-        "status": true,
+        "status": True,
         "name": "Bleeding Hollow",
         "slug": "bleeding-hollow",
         "battlegroup": "Ruin",
@@ -875,7 +875,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -888,7 +888,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526524410
         },
-        "status": true,
+        "status": True,
         "name": "Blood Furnace",
         "slug": "blood-furnace",
         "battlegroup": "Ruin",
@@ -898,7 +898,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -911,7 +911,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526187484
         },
-        "status": true,
+        "status": True,
         "name": "Bloodhoof",
         "slug": "bloodhoof",
         "battlegroup": "Ruin",
@@ -921,7 +921,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -934,7 +934,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526588725
         },
-        "status": true,
+        "status": True,
         "name": "Bloodscalp",
         "slug": "bloodscalp",
         "battlegroup": "Cyclone",
@@ -944,7 +944,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -957,7 +957,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525965630
         },
-        "status": true,
+        "status": True,
         "name": "Bonechewer",
         "slug": "bonechewer",
         "battlegroup": "Vengeance",
@@ -967,7 +967,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -980,7 +980,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526413267
         },
-        "status": true,
+        "status": True,
         "name": "Borean Tundra",
         "slug": "borean-tundra",
         "battlegroup": "Reckoning",
@@ -990,7 +990,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1003,7 +1003,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526588340
         },
-        "status": true,
+        "status": True,
         "name": "Boulderfist",
         "slug": "boulderfist",
         "battlegroup": "Cyclone",
@@ -1013,7 +1013,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1026,7 +1026,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526428350
         },
-        "status": true,
+        "status": True,
         "name": "Bronzebeard",
         "slug": "bronzebeard",
         "battlegroup": "Cyclone",
@@ -1036,7 +1036,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1049,7 +1049,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526097636
         },
-        "status": true,
+        "status": True,
         "name": "Burning Blade",
         "slug": "burning-blade",
         "battlegroup": "Vindication",
@@ -1059,7 +1059,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1072,7 +1072,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524692223
         },
-        "status": true,
+        "status": True,
         "name": "Burning Legion",
         "slug": "burning-legion",
         "battlegroup": "Shadowburn",
@@ -1082,7 +1082,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1095,7 +1095,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525791690
         },
-        "status": true,
+        "status": True,
         "name": "Caelestrasz",
         "slug": "caelestrasz",
         "battlegroup": "AU/NZ Battle Group",
@@ -1105,7 +1105,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1118,7 +1118,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526440478
         },
-        "status": true,
+        "status": True,
         "name": "Cairne",
         "slug": "cairne",
         "battlegroup": "Cyclone",
@@ -1128,7 +1128,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1141,7 +1141,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526440149
         },
-        "status": true,
+        "status": True,
         "name": "Cenarion Circle",
         "slug": "cenarion-circle",
         "battlegroup": "Cyclone",
@@ -1151,7 +1151,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1164,7 +1164,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526589673
         },
-        "status": true,
+        "status": True,
         "name": "Cenarius",
         "slug": "cenarius",
         "battlegroup": "Cyclone",
@@ -1174,7 +1174,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1187,7 +1187,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526397132
         },
-        "status": true,
+        "status": True,
         "name": "Cho'gall",
         "slug": "chogall",
         "battlegroup": "Vindication",
@@ -1197,7 +1197,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1210,7 +1210,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525875913
         },
-        "status": true,
+        "status": True,
         "name": "Chromaggus",
         "slug": "chromaggus",
         "battlegroup": "Vengeance",
@@ -1220,7 +1220,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1233,7 +1233,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099979
         },
-        "status": true,
+        "status": True,
         "name": "Coilfang",
         "slug": "coilfang",
         "battlegroup": "Shadowburn",
@@ -1243,7 +1243,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1256,7 +1256,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525875369
         },
-        "status": true,
+        "status": True,
         "name": "Crushridge",
         "slug": "crushridge",
         "battlegroup": "Vengeance",
@@ -1266,7 +1266,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1279,7 +1279,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525965778
         },
-        "status": true,
+        "status": True,
         "name": "Daggerspine",
         "slug": "daggerspine",
         "battlegroup": "Vengeance",
@@ -1289,7 +1289,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1302,7 +1302,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526048709
         },
-        "status": true,
+        "status": True,
         "name": "Dalaran",
         "slug": "dalaran",
         "battlegroup": "Rampage",
@@ -1312,7 +1312,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1325,7 +1325,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099178
         },
-        "status": true,
+        "status": True,
         "name": "Dalvengyr",
         "slug": "dalvengyr",
         "battlegroup": "Shadowburn",
@@ -1335,7 +1335,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1348,7 +1348,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099147
         },
-        "status": true,
+        "status": True,
         "name": "Dark Iron",
         "slug": "dark-iron",
         "battlegroup": "Shadowburn",
@@ -1358,7 +1358,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1371,7 +1371,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526549031
         },
-        "status": true,
+        "status": True,
         "name": "Darkspear",
         "slug": "darkspear",
         "battlegroup": "Cyclone",
@@ -1381,7 +1381,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1394,7 +1394,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525869398
         },
-        "status": true,
+        "status": True,
         "name": "Darrowmere",
         "slug": "darrowmere",
         "battlegroup": "Reckoning",
@@ -1404,7 +1404,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1417,7 +1417,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526468851
         },
-        "status": true,
+        "status": True,
         "name": "Dath'Remar",
         "slug": "dathremar",
         "battlegroup": "AU/NZ Battle Group",
@@ -1427,7 +1427,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1440,7 +1440,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526193167
         },
-        "status": true,
+        "status": True,
         "name": "Dawnbringer",
         "slug": "dawnbringer",
         "battlegroup": "Ruin",
@@ -1450,7 +1450,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1463,7 +1463,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526137793
         },
-        "status": true,
+        "status": True,
         "name": "Deathwing",
         "slug": "deathwing",
         "battlegroup": "Shadowburn",
@@ -1473,7 +1473,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1486,7 +1486,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099456
         },
-        "status": true,
+        "status": True,
         "name": "Demon Soul",
         "slug": "demon-soul",
         "battlegroup": "Shadowburn",
@@ -1496,7 +1496,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1509,7 +1509,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526164816
         },
-        "status": true,
+        "status": True,
         "name": "Dentarg",
         "slug": "dentarg",
         "battlegroup": "Rampage",
@@ -1519,7 +1519,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1532,7 +1532,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526182834
         },
-        "status": true,
+        "status": True,
         "name": "Destromath",
         "slug": "destromath",
         "battlegroup": "Ruin",
@@ -1542,7 +1542,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1555,7 +1555,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186648
         },
-        "status": true,
+        "status": True,
         "name": "Dethecus",
         "slug": "dethecus",
         "battlegroup": "Shadowburn",
@@ -1565,7 +1565,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1578,7 +1578,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186337
         },
-        "status": true,
+        "status": True,
         "name": "Detheroc",
         "slug": "detheroc",
         "battlegroup": "Shadowburn",
@@ -1588,7 +1588,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1601,7 +1601,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526409928
         },
-        "status": true,
+        "status": True,
         "name": "Doomhammer",
         "slug": "doomhammer",
         "battlegroup": "Shadowburn",
@@ -1611,7 +1611,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1624,7 +1624,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525893005
         },
-        "status": true,
+        "status": True,
         "name": "Draenor",
         "slug": "draenor",
         "battlegroup": "Cyclone",
@@ -1634,7 +1634,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1647,7 +1647,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525891782
         },
-        "status": true,
+        "status": True,
         "name": "Dragonblight",
         "slug": "dragonblight",
         "battlegroup": "Cyclone",
@@ -1657,7 +1657,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1670,7 +1670,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526422778
         },
-        "status": true,
+        "status": True,
         "name": "Dragonmaw",
         "slug": "dragonmaw",
         "battlegroup": "Reckoning",
@@ -1680,7 +1680,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1693,7 +1693,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993646
         },
-        "status": true,
+        "status": True,
         "name": "Drak'Tharon",
         "slug": "draktharon",
         "battlegroup": "Reckoning",
@@ -1703,7 +1703,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1716,7 +1716,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525887291
         },
-        "status": true,
+        "status": True,
         "name": "Drak'thul",
         "slug": "drakthul",
         "battlegroup": "Reckoning",
@@ -1726,7 +1726,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1739,7 +1739,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525877139
         },
-        "status": true,
+        "status": True,
         "name": "Draka",
         "slug": "draka",
         "battlegroup": "Cyclone",
@@ -1749,7 +1749,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1762,7 +1762,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526436509
         },
-        "status": true,
+        "status": True,
         "name": "Drakkari",
         "slug": "drakkari",
         "battlegroup": "Vindication",
@@ -1772,7 +1772,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1785,7 +1785,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525906875
         },
-        "status": true,
+        "status": True,
         "name": "Dreadmaul",
         "slug": "dreadmaul",
         "battlegroup": "AU/NZ Battle Group",
@@ -1795,7 +1795,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1808,7 +1808,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526585465
         },
-        "status": true,
+        "status": True,
         "name": "Drenden",
         "slug": "drenden",
         "battlegroup": "Reckoning",
@@ -1818,7 +1818,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1831,7 +1831,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526588129
         },
-        "status": true,
+        "status": True,
         "name": "Dunemaul",
         "slug": "dunemaul",
         "battlegroup": "Cyclone",
@@ -1841,7 +1841,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1854,7 +1854,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526061082
         },
-        "status": true,
+        "status": True,
         "name": "Durotan",
         "slug": "durotan",
         "battlegroup": "Ruin",
@@ -1864,7 +1864,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1877,7 +1877,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526187556
         },
-        "status": true,
+        "status": True,
         "name": "Duskwood",
         "slug": "duskwood",
         "battlegroup": "Ruin",
@@ -1887,7 +1887,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1900,7 +1900,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526095249
         },
-        "status": true,
+        "status": True,
         "name": "Earthen Ring",
         "slug": "earthen-ring",
         "battlegroup": "Vindication",
@@ -1910,7 +1910,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1923,7 +1923,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525892355
         },
-        "status": true,
+        "status": True,
         "name": "Echo Isles",
         "slug": "echo-isles",
         "battlegroup": "Cyclone",
@@ -1933,7 +1933,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1946,7 +1946,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527953953
         },
-        "status": true,
+        "status": True,
         "name": "Eitrigg",
         "slug": "eitrigg",
         "battlegroup": "Vengeance",
@@ -1956,7 +1956,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -1969,7 +1969,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525872024
         },
-        "status": true,
+        "status": True,
         "name": "Eldre'Thalas",
         "slug": "eldrethalas",
         "battlegroup": "Reckoning",
@@ -1979,7 +1979,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -1992,7 +1992,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526403932
         },
-        "status": true,
+        "status": True,
         "name": "Elune",
         "slug": "elune",
         "battlegroup": "Ruin",
@@ -2002,7 +2002,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2015,7 +2015,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526171202
         },
-        "status": true,
+        "status": True,
         "name": "Emerald Dream",
         "slug": "emerald-dream",
         "battlegroup": "Shadowburn",
@@ -2025,7 +2025,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2038,7 +2038,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526093626
         },
-        "status": true,
+        "status": True,
         "name": "Eonar",
         "slug": "eonar",
         "battlegroup": "Vindication",
@@ -2048,7 +2048,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2061,7 +2061,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526135500
         },
-        "status": true,
+        "status": True,
         "name": "Eredar",
         "slug": "eredar",
         "battlegroup": "Shadowburn",
@@ -2071,7 +2071,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2084,7 +2084,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526137432
         },
-        "status": true,
+        "status": True,
         "name": "Executus",
         "slug": "executus",
         "battlegroup": "Shadowburn",
@@ -2094,7 +2094,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2107,7 +2107,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526200579
         },
-        "status": true,
+        "status": True,
         "name": "Exodar",
         "slug": "exodar",
         "battlegroup": "Ruin",
@@ -2117,7 +2117,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2130,7 +2130,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525901115
         },
-        "status": true,
+        "status": True,
         "name": "Farstriders",
         "slug": "farstriders",
         "battlegroup": "Bloodlust",
@@ -2140,7 +2140,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2153,7 +2153,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526564503
         },
-        "status": true,
+        "status": True,
         "name": "Feathermoon",
         "slug": "feathermoon",
         "battlegroup": "Reckoning",
@@ -2163,7 +2163,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2176,7 +2176,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525891180
         },
-        "status": true,
+        "status": True,
         "name": "Fenris",
         "slug": "fenris",
         "battlegroup": "Cyclone",
@@ -2186,7 +2186,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2199,7 +2199,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993853
         },
-        "status": true,
+        "status": True,
         "name": "Firetree",
         "slug": "firetree",
         "battlegroup": "Reckoning",
@@ -2209,7 +2209,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2222,7 +2222,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526531239
         },
-        "status": true,
+        "status": True,
         "name": "Fizzcrank",
         "slug": "fizzcrank",
         "battlegroup": "Vindication",
@@ -2232,7 +2232,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2245,7 +2245,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525888003
         },
-        "status": true,
+        "status": True,
         "name": "Frostmane",
         "slug": "frostmane",
         "battlegroup": "Reckoning",
@@ -2255,7 +2255,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2268,7 +2268,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526468648
         },
-        "status": true,
+        "status": True,
         "name": "Frostmourne",
         "slug": "frostmourne",
         "battlegroup": "AU/NZ Battle Group",
@@ -2278,7 +2278,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2291,7 +2291,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525995990
         },
-        "status": true,
+        "status": True,
         "name": "Frostwolf",
         "slug": "frostwolf",
         "battlegroup": "Bloodlust",
@@ -2301,7 +2301,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2314,7 +2314,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526151744
         },
-        "status": true,
+        "status": True,
         "name": "Galakrond",
         "slug": "galakrond",
         "battlegroup": "Rampage",
@@ -2324,7 +2324,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2337,7 +2337,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526181538
         },
-        "status": true,
+        "status": True,
         "name": "Gallywix",
         "slug": "gallywix",
         "battlegroup": "Ruin",
@@ -2347,7 +2347,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2360,7 +2360,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525875536
         },
-        "status": true,
+        "status": True,
         "name": "Garithos",
         "slug": "garithos",
         "battlegroup": "Vengeance",
@@ -2370,7 +2370,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2383,7 +2383,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524354141
         },
-        "status": true,
+        "status": True,
         "name": "Garona",
         "slug": "garona",
         "battlegroup": "Rampage",
@@ -2393,7 +2393,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2406,7 +2406,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527947729
         },
-        "status": true,
+        "status": True,
         "name": "Garrosh",
         "slug": "garrosh",
         "battlegroup": "Vengeance",
@@ -2416,7 +2416,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2429,7 +2429,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526132730
         },
-        "status": true,
+        "status": True,
         "name": "Ghostlands",
         "slug": "ghostlands",
         "battlegroup": "Rampage",
@@ -2439,7 +2439,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2452,7 +2452,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526404014
         },
-        "status": true,
+        "status": True,
         "name": "Gilneas",
         "slug": "gilneas",
         "battlegroup": "Ruin",
@@ -2462,7 +2462,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2475,7 +2475,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526149869
         },
-        "status": true,
+        "status": True,
         "name": "Gnomeregan",
         "slug": "gnomeregan",
         "battlegroup": "Shadowburn",
@@ -2485,7 +2485,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2498,7 +2498,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526516522
         },
-        "status": true,
+        "status": True,
         "name": "Goldrinn",
         "slug": "goldrinn",
         "battlegroup": "Rampage",
@@ -2508,7 +2508,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2521,7 +2521,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526136089
         },
-        "status": true,
+        "status": True,
         "name": "Gorefiend",
         "slug": "gorefiend",
         "battlegroup": "Shadowburn",
@@ -2531,7 +2531,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2544,7 +2544,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526529197
         },
-        "status": true,
+        "status": True,
         "name": "Gorgonnash",
         "slug": "gorgonnash",
         "battlegroup": "Ruin",
@@ -2554,7 +2554,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2567,7 +2567,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526045547
         },
-        "status": true,
+        "status": True,
         "name": "Greymane",
         "slug": "greymane",
         "battlegroup": "Shadowburn",
@@ -2577,7 +2577,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2590,7 +2590,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526526163
         },
-        "status": true,
+        "status": True,
         "name": "Grizzly Hills",
         "slug": "grizzly-hills",
         "battlegroup": "Ruin",
@@ -2600,7 +2600,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2613,7 +2613,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526541380
         },
-        "status": true,
+        "status": True,
         "name": "Gul'dan",
         "slug": "guldan",
         "battlegroup": "Ruin",
@@ -2623,7 +2623,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2636,7 +2636,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526469974
         },
-        "status": true,
+        "status": True,
         "name": "Gundrak",
         "slug": "gundrak",
         "battlegroup": "AU/NZ Battle Group",
@@ -2646,7 +2646,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2659,7 +2659,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525965258
         },
-        "status": true,
+        "status": True,
         "name": "Gurubashi",
         "slug": "gurubashi",
         "battlegroup": "Vengeance",
@@ -2669,7 +2669,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2682,7 +2682,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525965693
         },
-        "status": true,
+        "status": True,
         "name": "Hakkar",
         "slug": "hakkar",
         "battlegroup": "Vengeance",
@@ -2692,7 +2692,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2705,7 +2705,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186688
         },
-        "status": true,
+        "status": True,
         "name": "Haomarush",
         "slug": "haomarush",
         "battlegroup": "Shadowburn",
@@ -2715,7 +2715,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2728,7 +2728,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526140921
         },
-        "status": true,
+        "status": True,
         "name": "Hellscream",
         "slug": "hellscream",
         "battlegroup": "Rampage",
@@ -2738,7 +2738,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2751,7 +2751,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524734749
         },
-        "status": true,
+        "status": True,
         "name": "Hydraxis",
         "slug": "hydraxis",
         "battlegroup": "Reckoning",
@@ -2761,7 +2761,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2774,7 +2774,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527952589
         },
-        "status": true,
+        "status": True,
         "name": "Hyjal",
         "slug": "hyjal",
         "battlegroup": "Vengeance",
@@ -2784,7 +2784,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2797,7 +2797,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526438394
         },
-        "status": true,
+        "status": True,
         "name": "Icecrown",
         "slug": "icecrown",
         "battlegroup": "Vindication",
@@ -2807,7 +2807,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2820,7 +2820,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526220580
         },
-        "status": true,
+        "status": True,
         "name": "Illidan",
         "slug": "illidan",
         "battlegroup": "Rampage",
@@ -2830,7 +2830,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2843,7 +2843,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524692831
         },
-        "status": true,
+        "status": True,
         "name": "Jaedenar",
         "slug": "jaedenar",
         "battlegroup": "Shadowburn",
@@ -2853,7 +2853,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2866,7 +2866,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526470158
         },
-        "status": true,
+        "status": True,
         "name": "Jubei'Thos",
         "slug": "jubeithos",
         "battlegroup": "AU/NZ Battle Group",
@@ -2876,7 +2876,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2889,7 +2889,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526132832
         },
-        "status": true,
+        "status": True,
         "name": "Kael'thas",
         "slug": "kaelthas",
         "battlegroup": "Rampage",
@@ -2899,7 +2899,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2912,7 +2912,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526137369
         },
-        "status": true,
+        "status": True,
         "name": "Kalecgos",
         "slug": "kalecgos",
         "battlegroup": "Shadowburn",
@@ -2922,7 +2922,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2935,7 +2935,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526082461
         },
-        "status": true,
+        "status": True,
         "name": "Kargath",
         "slug": "kargath",
         "battlegroup": "Vindication",
@@ -2945,7 +2945,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -2958,7 +2958,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526073231
         },
-        "status": true,
+        "status": True,
         "name": "Kel'Thuzad",
         "slug": "kelthuzad",
         "battlegroup": "Vindication",
@@ -2968,7 +2968,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -2981,7 +2981,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526156234
         },
-        "status": true,
+        "status": True,
         "name": "Khadgar",
         "slug": "khadgar",
         "battlegroup": "Rampage",
@@ -2991,7 +2991,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3004,7 +3004,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526415908
         },
-        "status": true,
+        "status": True,
         "name": "Khaz Modan",
         "slug": "khaz-modan",
         "battlegroup": "Cyclone",
@@ -3014,7 +3014,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3027,7 +3027,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526468332
         },
-        "status": true,
+        "status": True,
         "name": "Khaz'goroth",
         "slug": "khazgoroth",
         "battlegroup": "AU/NZ Battle Group",
@@ -3037,7 +3037,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3050,7 +3050,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525988311
         },
-        "status": true,
+        "status": True,
         "name": "Kil'jaeden",
         "slug": "kiljaeden",
         "battlegroup": "Bloodlust",
@@ -3060,7 +3060,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3073,7 +3073,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525982555
         },
-        "status": true,
+        "status": True,
         "name": "Kilrogg",
         "slug": "kilrogg",
         "battlegroup": "Bloodlust",
@@ -3083,7 +3083,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3096,7 +3096,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526417747
         },
-        "status": true,
+        "status": True,
         "name": "Kirin Tor",
         "slug": "kirin-tor",
         "battlegroup": "Rampage",
@@ -3106,7 +3106,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3119,7 +3119,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527267326
         },
-        "status": true,
+        "status": True,
         "name": "Korgath",
         "slug": "korgath",
         "battlegroup": "Vengeance",
@@ -3129,7 +3129,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3142,7 +3142,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525871995
         },
-        "status": true,
+        "status": True,
         "name": "Korialstrasz",
         "slug": "korialstrasz",
         "battlegroup": "Reckoning",
@@ -3152,7 +3152,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3165,7 +3165,7 @@ realm_list = [{
             "status": 0,
             "next": 1437528087526
         },
-        "status": true,
+        "status": True,
         "name": "Kul Tiras",
         "slug": "kul-tiras",
         "battlegroup": "Vengeance",
@@ -3175,7 +3175,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3188,7 +3188,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526397732
         },
-        "status": true,
+        "status": True,
         "name": "Laughing Skull",
         "slug": "laughing-skull",
         "battlegroup": "Vindication",
@@ -3198,7 +3198,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3211,7 +3211,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186436
         },
-        "status": true,
+        "status": True,
         "name": "Lethon",
         "slug": "lethon",
         "battlegroup": "Shadowburn",
@@ -3221,7 +3221,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3234,7 +3234,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526426488
         },
-        "status": true,
+        "status": True,
         "name": "Lightbringer",
         "slug": "lightbringer",
         "battlegroup": "Cyclone",
@@ -3244,7 +3244,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3257,7 +3257,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526097220
         },
-        "status": true,
+        "status": True,
         "name": "Lightning's Blade",
         "slug": "lightnings-blade",
         "battlegroup": "Vindication",
@@ -3267,7 +3267,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3280,7 +3280,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526423142
         },
-        "status": true,
+        "status": True,
         "name": "Lightninghoof",
         "slug": "lightninghoof",
         "battlegroup": "Shadowburn",
@@ -3290,7 +3290,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3303,7 +3303,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526095906
         },
-        "status": true,
+        "status": True,
         "name": "Llane",
         "slug": "llane",
         "battlegroup": "Vindication",
@@ -3313,7 +3313,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3326,7 +3326,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526526414
         },
-        "status": true,
+        "status": True,
         "name": "Lothar",
         "slug": "lothar",
         "battlegroup": "Ruin",
@@ -3336,7 +3336,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3349,7 +3349,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526194029
         },
-        "status": true,
+        "status": True,
         "name": "Madoran",
         "slug": "madoran",
         "battlegroup": "Ruin",
@@ -3359,7 +3359,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3372,7 +3372,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526423683
         },
-        "status": true,
+        "status": True,
         "name": "Maelstrom",
         "slug": "maelstrom",
         "battlegroup": "Shadowburn",
@@ -3382,7 +3382,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3395,7 +3395,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191647
         },
-        "status": true,
+        "status": True,
         "name": "Magtheridon",
         "slug": "magtheridon",
         "battlegroup": "Ruin",
@@ -3405,7 +3405,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3418,7 +3418,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526588701
         },
-        "status": true,
+        "status": True,
         "name": "Maiev",
         "slug": "maiev",
         "battlegroup": "Cyclone",
@@ -3428,7 +3428,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3441,7 +3441,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526108822
         },
-        "status": true,
+        "status": True,
         "name": "Mal'Ganis",
         "slug": "malganis",
         "battlegroup": "Vindication",
@@ -3451,7 +3451,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3464,7 +3464,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526098951
         },
-        "status": true,
+        "status": True,
         "name": "Malfurion",
         "slug": "malfurion",
         "battlegroup": "Ruin",
@@ -3474,7 +3474,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3487,7 +3487,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993746
         },
-        "status": true,
+        "status": True,
         "name": "Malorne",
         "slug": "malorne",
         "battlegroup": "Reckoning",
@@ -3497,7 +3497,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3510,7 +3510,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526439024
         },
-        "status": true,
+        "status": True,
         "name": "Malygos",
         "slug": "malygos",
         "battlegroup": "Vindication",
@@ -3520,7 +3520,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3533,7 +3533,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526524359
         },
-        "status": true,
+        "status": True,
         "name": "Mannoroth",
         "slug": "mannoroth",
         "battlegroup": "Ruin",
@@ -3543,7 +3543,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3556,7 +3556,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526200609
         },
-        "status": true,
+        "status": True,
         "name": "Medivh",
         "slug": "medivh",
         "battlegroup": "Ruin",
@@ -3566,7 +3566,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3579,7 +3579,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526920169
         },
-        "status": true,
+        "status": True,
         "name": "Misha",
         "slug": "misha",
         "battlegroup": "Vengeance",
@@ -3589,7 +3589,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3602,7 +3602,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526579053
         },
-        "status": true,
+        "status": True,
         "name": "Mok'Nathal",
         "slug": "moknathal",
         "battlegroup": "Reckoning",
@@ -3612,7 +3612,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3625,7 +3625,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526579351
         },
-        "status": true,
+        "status": True,
         "name": "Moon Guard",
         "slug": "moon-guard",
         "battlegroup": "Reckoning",
@@ -3635,7 +3635,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3648,7 +3648,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526149447
         },
-        "status": true,
+        "status": True,
         "name": "Moonrunner",
         "slug": "moonrunner",
         "battlegroup": "Shadowburn",
@@ -3658,7 +3658,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3671,7 +3671,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526422148
         },
-        "status": true,
+        "status": True,
         "name": "Mug'thol",
         "slug": "mugthol",
         "battlegroup": "Reckoning",
@@ -3681,7 +3681,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3694,7 +3694,7 @@ realm_list = [{
             "status": 0,
             "next": 1437528110321
         },
-        "status": true,
+        "status": True,
         "name": "Muradin",
         "slug": "muradin",
         "battlegroup": "Vengeance",
@@ -3704,7 +3704,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3717,7 +3717,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525791550
         },
-        "status": true,
+        "status": True,
         "name": "Nagrand",
         "slug": "nagrand",
         "battlegroup": "AU/NZ Battle Group",
@@ -3727,7 +3727,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3740,7 +3740,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525876017
         },
-        "status": true,
+        "status": True,
         "name": "Nathrezim",
         "slug": "nathrezim",
         "battlegroup": "Vengeance",
@@ -3750,7 +3750,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3763,7 +3763,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526954576
         },
-        "status": true,
+        "status": True,
         "name": "Nazgrel",
         "slug": "nazgrel",
         "battlegroup": "Bloodlust",
@@ -3773,7 +3773,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3786,7 +3786,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526524615
         },
-        "status": true,
+        "status": True,
         "name": "Nazjatar",
         "slug": "nazjatar",
         "battlegroup": "Ruin",
@@ -3796,7 +3796,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3809,7 +3809,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526518884
         },
-        "status": true,
+        "status": True,
         "name": "Nemesis",
         "slug": "nemesis",
         "battlegroup": "Rampage",
@@ -3819,7 +3819,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3832,7 +3832,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525887143
         },
-        "status": true,
+        "status": True,
         "name": "Ner'zhul",
         "slug": "nerzhul",
         "battlegroup": "Reckoning",
@@ -3842,7 +3842,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3855,7 +3855,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526954257
         },
-        "status": true,
+        "status": True,
         "name": "Nesingwary",
         "slug": "nesingwary",
         "battlegroup": "Bloodlust",
@@ -3865,7 +3865,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3878,7 +3878,7 @@ realm_list = [{
             "status": 0,
             "next": 1437528110043
         },
-        "status": true,
+        "status": True,
         "name": "Nordrassil",
         "slug": "nordrassil",
         "battlegroup": "Vengeance",
@@ -3888,7 +3888,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3901,7 +3901,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526082261
         },
-        "status": true,
+        "status": True,
         "name": "Norgannon",
         "slug": "norgannon",
         "battlegroup": "Vindication",
@@ -3911,7 +3911,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3924,7 +3924,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526097133
         },
-        "status": true,
+        "status": True,
         "name": "Onyxia",
         "slug": "onyxia",
         "battlegroup": "Vindication",
@@ -3934,7 +3934,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3947,7 +3947,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526440344
         },
-        "status": true,
+        "status": True,
         "name": "Perenolde",
         "slug": "perenolde",
         "battlegroup": "Cyclone",
@@ -3957,7 +3957,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -3970,7 +3970,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525988797
         },
-        "status": true,
+        "status": True,
         "name": "Proudmoore",
         "slug": "proudmoore",
         "battlegroup": "Bloodlust",
@@ -3980,7 +3980,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -3993,7 +3993,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526562321
         },
-        "status": true,
+        "status": True,
         "name": "Quel'Thalas",
         "slug": "quelthalas",
         "battlegroup": "Vindication",
@@ -4003,7 +4003,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4016,7 +4016,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526395493
         },
-        "status": true,
+        "status": True,
         "name": "Quel'dorei",
         "slug": "queldorei",
         "battlegroup": "Bloodlust",
@@ -4026,7 +4026,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4039,7 +4039,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526531855
         },
-        "status": true,
+        "status": True,
         "name": "Ragnaros",
         "slug": "ragnaros",
         "battlegroup": "Vindication",
@@ -4049,7 +4049,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4062,7 +4062,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526413150
         },
-        "status": true,
+        "status": True,
         "name": "Ravencrest",
         "slug": "ravencrest",
         "battlegroup": "Rampage",
@@ -4072,7 +4072,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4085,7 +4085,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526527784
         },
-        "status": true,
+        "status": True,
         "name": "Ravenholdt",
         "slug": "ravenholdt",
         "battlegroup": "Shadowburn",
@@ -4095,7 +4095,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4108,7 +4108,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526920165
         },
-        "status": true,
+        "status": True,
         "name": "Rexxar",
         "slug": "rexxar",
         "battlegroup": "Vengeance",
@@ -4118,7 +4118,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4131,7 +4131,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993869
         },
-        "status": true,
+        "status": True,
         "name": "Rivendare",
         "slug": "rivendare",
         "battlegroup": "Reckoning",
@@ -4141,7 +4141,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4154,7 +4154,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527950722
         },
-        "status": true,
+        "status": True,
         "name": "Runetotem",
         "slug": "runetotem",
         "battlegroup": "Vengeance",
@@ -4164,7 +4164,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4177,7 +4177,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526200875
         },
-        "status": true,
+        "status": True,
         "name": "Sargeras",
         "slug": "sargeras",
         "battlegroup": "Shadowburn",
@@ -4187,7 +4187,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4200,7 +4200,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526465822
         },
-        "status": true,
+        "status": True,
         "name": "Saurfang",
         "slug": "saurfang",
         "battlegroup": "AU/NZ Battle Group",
@@ -4210,7 +4210,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4223,7 +4223,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526564654
         },
-        "status": true,
+        "status": True,
         "name": "Scarlet Crusade",
         "slug": "scarlet-crusade",
         "battlegroup": "Reckoning",
@@ -4233,7 +4233,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4246,7 +4246,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526173126
         },
-        "status": true,
+        "status": True,
         "name": "Scilla",
         "slug": "scilla",
         "battlegroup": "Shadowburn",
@@ -4256,7 +4256,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4269,7 +4269,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526395263
         },
-        "status": true,
+        "status": True,
         "name": "Sen'jin",
         "slug": "senjin",
         "battlegroup": "Bloodlust",
@@ -4279,7 +4279,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4292,7 +4292,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526417236
         },
-        "status": true,
+        "status": True,
         "name": "Sentinels",
         "slug": "sentinels",
         "battlegroup": "Rampage",
@@ -4302,7 +4302,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4315,7 +4315,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525879420
         },
-        "status": true,
+        "status": True,
         "name": "Shadow Council",
         "slug": "shadow-council",
         "battlegroup": "Reckoning",
@@ -4325,7 +4325,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4338,7 +4338,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526186896
         },
-        "status": true,
+        "status": True,
         "name": "Shadowmoon",
         "slug": "shadowmoon",
         "battlegroup": "Shadowburn",
@@ -4348,7 +4348,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4361,7 +4361,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526414010
         },
-        "status": true,
+        "status": True,
         "name": "Shadowsong",
         "slug": "shadowsong",
         "battlegroup": "Reckoning",
@@ -4371,7 +4371,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4384,7 +4384,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526428056
         },
-        "status": true,
+        "status": True,
         "name": "Shandris",
         "slug": "shandris",
         "battlegroup": "Cyclone",
@@ -4394,7 +4394,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4407,7 +4407,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526137941
         },
-        "status": true,
+        "status": True,
         "name": "Shattered Halls",
         "slug": "shattered-halls",
         "battlegroup": "Shadowburn",
@@ -4417,7 +4417,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4430,7 +4430,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099234
         },
-        "status": true,
+        "status": True,
         "name": "Shattered Hand",
         "slug": "shattered-hand",
         "battlegroup": "Shadowburn",
@@ -4440,7 +4440,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4453,7 +4453,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527953230
         },
-        "status": true,
+        "status": True,
         "name": "Shu'halo",
         "slug": "shuhalo",
         "battlegroup": "Vengeance",
@@ -4463,7 +4463,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4476,7 +4476,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525901948
         },
-        "status": true,
+        "status": True,
         "name": "Silver Hand",
         "slug": "silver-hand",
         "battlegroup": "Bloodlust",
@@ -4486,7 +4486,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4499,7 +4499,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526578186
         },
-        "status": true,
+        "status": True,
         "name": "Silvermoon",
         "slug": "silvermoon",
         "battlegroup": "Reckoning",
@@ -4509,7 +4509,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4522,7 +4522,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526440557
         },
-        "status": true,
+        "status": True,
         "name": "Sisters of Elune",
         "slug": "sisters-of-elune",
         "battlegroup": "Cyclone",
@@ -4532,7 +4532,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4545,7 +4545,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526541190
         },
-        "status": true,
+        "status": True,
         "name": "Skullcrusher",
         "slug": "skullcrusher",
         "battlegroup": "Ruin",
@@ -4555,7 +4555,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4568,7 +4568,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525887628
         },
-        "status": true,
+        "status": True,
         "name": "Skywall",
         "slug": "skywall",
         "battlegroup": "Reckoning",
@@ -4578,7 +4578,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4591,7 +4591,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525875402
         },
-        "status": true,
+        "status": True,
         "name": "Smolderthorn",
         "slug": "smolderthorn",
         "battlegroup": "Vengeance",
@@ -4601,7 +4601,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4614,7 +4614,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526136016
         },
-        "status": true,
+        "status": True,
         "name": "Spinebreaker",
         "slug": "spinebreaker",
         "battlegroup": "Shadowburn",
@@ -4624,7 +4624,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4637,7 +4637,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993215
         },
-        "status": true,
+        "status": True,
         "name": "Spirestone",
         "slug": "spirestone",
         "battlegroup": "Reckoning",
@@ -4647,7 +4647,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4660,7 +4660,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526177827
         },
-        "status": true,
+        "status": True,
         "name": "Staghelm",
         "slug": "staghelm",
         "battlegroup": "Shadowburn",
@@ -4670,7 +4670,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4683,7 +4683,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526417390
         },
-        "status": true,
+        "status": True,
         "name": "Steamwheedle Cartel",
         "slug": "steamwheedle-cartel",
         "battlegroup": "Rampage",
@@ -4693,7 +4693,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4706,7 +4706,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526588587
         },
-        "status": true,
+        "status": True,
         "name": "Stonemaul",
         "slug": "stonemaul",
         "battlegroup": "Cyclone",
@@ -4716,7 +4716,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4729,7 +4729,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526242565
         },
-        "status": true,
+        "status": True,
         "name": "Stormrage",
         "slug": "stormrage",
         "battlegroup": "Ruin",
@@ -4739,7 +4739,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4752,7 +4752,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526178983
         },
-        "status": true,
+        "status": True,
         "name": "Stormreaver",
         "slug": "stormreaver",
         "battlegroup": "Rampage",
@@ -4762,7 +4762,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4775,7 +4775,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525993944
         },
-        "status": true,
+        "status": True,
         "name": "Stormscale",
         "slug": "stormscale",
         "battlegroup": "Reckoning",
@@ -4785,7 +4785,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4798,7 +4798,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525877541
         },
-        "status": true,
+        "status": True,
         "name": "Suramar",
         "slug": "suramar",
         "battlegroup": "Cyclone",
@@ -4808,7 +4808,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4821,7 +4821,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526045225
         },
-        "status": true,
+        "status": True,
         "name": "Tanaris",
         "slug": "tanaris",
         "battlegroup": "Shadowburn",
@@ -4831,7 +4831,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4844,7 +4844,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524734256
         },
-        "status": true,
+        "status": True,
         "name": "Terenas",
         "slug": "terenas",
         "battlegroup": "Reckoning",
@@ -4854,7 +4854,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4867,7 +4867,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526408894
         },
-        "status": true,
+        "status": True,
         "name": "Terokkar",
         "slug": "terokkar",
         "battlegroup": "Rampage",
@@ -4877,7 +4877,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4890,7 +4890,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525907011
         },
-        "status": true,
+        "status": True,
         "name": "Thaurissan",
         "slug": "thaurissan",
         "battlegroup": "AU/NZ Battle Group",
@@ -4900,7 +4900,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -4913,7 +4913,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526530009
         },
-        "status": true,
+        "status": True,
         "name": "The Forgotten Coast",
         "slug": "the-forgotten-coast",
         "battlegroup": "Ruin",
@@ -4923,7 +4923,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4936,7 +4936,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191591
         },
-        "status": true,
+        "status": True,
         "name": "The Scryers",
         "slug": "the-scryers",
         "battlegroup": "Ruin",
@@ -4946,7 +4946,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4959,7 +4959,7 @@ realm_list = [{
             "status": 0,
             "next": 1437524692776
         },
-        "status": true,
+        "status": True,
         "name": "The Underbog",
         "slug": "the-underbog",
         "battlegroup": "Shadowburn",
@@ -4969,7 +4969,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -4982,7 +4982,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526423867
         },
-        "status": true,
+        "status": True,
         "name": "The Venture Co",
         "slug": "the-venture-co",
         "battlegroup": "Shadowburn",
@@ -4992,7 +4992,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5005,7 +5005,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525901522
         },
-        "status": true,
+        "status": True,
         "name": "Thorium Brotherhood",
         "slug": "thorium-brotherhood",
         "battlegroup": "Bloodlust",
@@ -5015,7 +5015,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5028,7 +5028,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526417888
         },
-        "status": true,
+        "status": True,
         "name": "Thrall",
         "slug": "thrall",
         "battlegroup": "Rampage",
@@ -5038,7 +5038,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5051,7 +5051,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526401425
         },
-        "status": true,
+        "status": True,
         "name": "Thunderhorn",
         "slug": "thunderhorn",
         "battlegroup": "Vindication",
@@ -5061,7 +5061,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5074,7 +5074,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526182680
         },
-        "status": true,
+        "status": True,
         "name": "Thunderlord",
         "slug": "thunderlord",
         "battlegroup": "Ruin",
@@ -5084,7 +5084,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5097,7 +5097,7 @@ realm_list = [{
             "status": 0,
             "next": 1437529609755
         },
-        "status": true,
+        "status": True,
         "name": "Tichondrius",
         "slug": "tichondrius",
         "battlegroup": "Bloodlust",
@@ -5107,7 +5107,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5120,7 +5120,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526410119
         },
-        "status": true,
+        "status": True,
         "name": "Tol Barad",
         "slug": "tol-barad",
         "battlegroup": "Shadowburn",
@@ -5130,7 +5130,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5143,7 +5143,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525887255
         },
-        "status": true,
+        "status": True,
         "name": "Tortheldrin",
         "slug": "tortheldrin",
         "battlegroup": "Reckoning",
@@ -5153,7 +5153,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5166,7 +5166,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526099089
         },
-        "status": true,
+        "status": True,
         "name": "Trollbane",
         "slug": "trollbane",
         "battlegroup": "Ruin",
@@ -5176,7 +5176,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5189,7 +5189,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526105250
         },
-        "status": true,
+        "status": True,
         "name": "Turalyon",
         "slug": "turalyon",
         "battlegroup": "Vindication",
@@ -5199,7 +5199,7 @@ realm_list = [{
     }, {
         "type": "rppvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5212,7 +5212,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526528091
         },
-        "status": true,
+        "status": True,
         "name": "Twisting Nether",
         "slug": "twisting-nether",
         "battlegroup": "Shadowburn",
@@ -5222,7 +5222,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5235,7 +5235,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526413187
         },
-        "status": true,
+        "status": True,
         "name": "Uldaman",
         "slug": "uldaman",
         "battlegroup": "Rampage",
@@ -5245,7 +5245,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5258,7 +5258,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525894191
         },
-        "status": true,
+        "status": True,
         "name": "Uldum",
         "slug": "uldum",
         "battlegroup": "Cyclone",
@@ -5268,7 +5268,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5281,7 +5281,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526198037
         },
-        "status": true,
+        "status": True,
         "name": "Undermine",
         "slug": "undermine",
         "battlegroup": "Ruin",
@@ -5291,7 +5291,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5304,7 +5304,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526173734
         },
-        "status": true,
+        "status": True,
         "name": "Ursin",
         "slug": "ursin",
         "battlegroup": "Shadowburn",
@@ -5314,7 +5314,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5327,7 +5327,7 @@ realm_list = [{
             "status": 0,
             "next": 1437527950904
         },
-        "status": true,
+        "status": True,
         "name": "Uther",
         "slug": "uther",
         "battlegroup": "Vengeance",
@@ -5337,7 +5337,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "low",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5350,7 +5350,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525995746
         },
-        "status": true,
+        "status": True,
         "name": "Vashj",
         "slug": "vashj",
         "battlegroup": "Bloodlust",
@@ -5360,7 +5360,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5373,7 +5373,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526954099
         },
-        "status": true,
+        "status": True,
         "name": "Vek'nilash",
         "slug": "veknilash",
         "battlegroup": "Bloodlust",
@@ -5383,7 +5383,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5396,7 +5396,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526093351
         },
-        "status": true,
+        "status": True,
         "name": "Velen",
         "slug": "velen",
         "battlegroup": "Vindication",
@@ -5406,7 +5406,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5419,7 +5419,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526529810
         },
-        "status": true,
+        "status": True,
         "name": "Warsong",
         "slug": "warsong",
         "battlegroup": "Ruin",
@@ -5429,7 +5429,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5442,7 +5442,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526164745
         },
-        "status": true,
+        "status": True,
         "name": "Whisperwind",
         "slug": "whisperwind",
         "battlegroup": "Rampage",
@@ -5452,7 +5452,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5465,7 +5465,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526135914
         },
-        "status": true,
+        "status": True,
         "name": "Wildhammer",
         "slug": "wildhammer",
         "battlegroup": "Shadowburn",
@@ -5475,7 +5475,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5488,7 +5488,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525869805
         },
-        "status": true,
+        "status": True,
         "name": "Windrunner",
         "slug": "windrunner",
         "battlegroup": "Reckoning",
@@ -5498,7 +5498,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5511,7 +5511,7 @@ realm_list = [{
             "status": 0,
             "next": 1437525982395
         },
-        "status": true,
+        "status": True,
         "name": "Winterhoof",
         "slug": "winterhoof",
         "battlegroup": "Bloodlust",
@@ -5521,7 +5521,7 @@ realm_list = [{
     }, {
         "type": "rp",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5534,7 +5534,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526564904
         },
-        "status": true,
+        "status": True,
         "name": "Wyrmrest Accord",
         "slug": "wyrmrest-accord",
         "battlegroup": "Cyclone",
@@ -5544,7 +5544,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5557,7 +5557,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526060364
         },
-        "status": true,
+        "status": True,
         "name": "Ysera",
         "slug": "ysera",
         "battlegroup": "Ruin",
@@ -5567,7 +5567,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5580,7 +5580,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526191472
         },
-        "status": true,
+        "status": True,
         "name": "Ysondre",
         "slug": "ysondre",
         "battlegroup": "Ruin",
@@ -5590,7 +5590,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 0,
@@ -5603,7 +5603,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526140470
         },
-        "status": true,
+        "status": True,
         "name": "Zangarmarsh",
         "slug": "zangarmarsh",
         "battlegroup": "Rampage",
@@ -5613,7 +5613,7 @@ realm_list = [{
     }, {
         "type": "pve",
         "population": "high",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5626,7 +5626,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526167133
         },
-        "status": true,
+        "status": True,
         "name": "Zul'jin",
         "slug": "zuljin",
         "battlegroup": "Ruin",
@@ -5636,7 +5636,7 @@ realm_list = [{
     }, {
         "type": "pvp",
         "population": "medium",
-        "queue": false,
+        "queue": False,
         "wintergrasp": {
             "area": 1,
             "controlling-faction": 1,
@@ -5649,7 +5649,7 @@ realm_list = [{
             "status": 0,
             "next": 1437526173964
         },
-        "status": true,
+        "status": True,
         "name": "Zuluhed",
         "slug": "zuluhed",
         "battlegroup": "Shadowburn",
@@ -5657,4 +5657,13 @@ realm_list = [{
         "timezone": "America/Los_Angeles",
         "connected_realms": ["ursin", "scilla", "andorhal", "zuluhed"]
     }]
-}
+
+realms = []
+for realm in realm_list:
+    realms.append(realm["name"])
+print realms
+
+
+
+
+
