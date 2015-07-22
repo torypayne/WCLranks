@@ -82,7 +82,7 @@ def guild_list():
 	if model.is_empty(redis_guild) == True:
 		guild = model.logs_new_guild(guild_name, guild_server, guild_region)
 	else:
-		print redis_guild
+		# print redis_guild
 		guild = {}
 		guild["guild_name"] = redis_guild["guild_name"]
 		guild["guild_server"] = redis_guild["guild_server"]

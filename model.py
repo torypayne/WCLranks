@@ -44,7 +44,7 @@ def scrape_rankings(kills):
 	rankings["guild"]["speed"]["duration"] = {}
 	for kill in kills:
 		r=requests.get(kill["url"])
-		print kill["url"]
+		# print kill["url"]
 		soup = BeautifulSoup(r.text, "html5lib")
 		data = dps_rankings(soup, rankings, kill["boss_id"])
 		data = hps_rankings(soup, rankings, kill["boss_id"])
