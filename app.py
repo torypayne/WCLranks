@@ -44,6 +44,21 @@ def report():
 	except:
 		return render_template("badlog.html")
 
+@app.route("/report", methods=["POST"])
+def refresh_report():
+	try:
+		report = request.args.get("report")
+		report = report[-16:]
+		r.delete(report)
+		analyzed = model.analyze(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		r.hmset(report, analyzed)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+	except:
+		return render_template("badlog.html")
+
+
 @app.route("/guildcalendar")
 def guild_calendar():
 	return render_template("guild_calendar.html")

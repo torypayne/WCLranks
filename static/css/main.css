@@ -34,3 +34,7 @@
 .center{
 	text-align: center;
 }
+
+.refresh-btn{
+	float: right;
+}
