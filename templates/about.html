@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<title>Rank Report - Get all the ranks from your Warcraft Logs Reports</title>
+<title>Warcraft Ranks - Get all the ranks from your Warcraft Logs Reports</title>
 <link rel="stylesheet" href="static/css/cyborg.bootstrap.min.css">
 
 <link rel="stylesheet" href="static/css/main.css">
@@ -18,7 +18,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Rank Report</a>
+                    <a class="navbar-brand" href="/">Warcraft Ranks</a>
                   </div>
                     <ul class="nav navbar-nav">
                     <ul class="nav navbar-nav navbar-right">
@@ -35,7 +35,7 @@
           <h3 class="panel-title">How does this work?</h3>
         </div>
         <div class="panel-body">
-           <p>Input a link to the front page of a warcraft logs report, hit submit, and wait for the results. The url of the log should look something like <a href="https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF" target="_blank">https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Rank Report uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.  Ranking information for each report that's been analyzed is then stored in Redis, so each report only gets scraped a single time.</p>
+           <p>Input a link to the front page of a warcraft logs report, hit submit, and wait for the results. The url of the log should look something like <a href="https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF" target="_blank">https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>.  Warcraft Ranks uses the WCL API to get fight information, then webscrapes the rankings for each boss kill and processes the information using Python.  Ranking information for each report that's been analyzed is then stored in Redis, so each report only gets scraped a single time.</p>
         </div>
       
       </div>
@@ -47,9 +47,9 @@
         
         <div class="panel-body">
             <p>Make sure the link you're putting in is to the front page of the WCL report.  You can also directly put in the sixteen character log ID.  As an example, for the log <a href="https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF" target="_blank">https://www.warcraftlogs.com/reports/h3pHANjvGmayDKXF</a>, the log id is <b>h3pHANjvGmayDKXF</b>.</p>
-            <p>Rank Report is unable to access (and thus analyze) private logs.</p>
-            <p>Rank Report can currently only analyze logs from Hellfire Citadel. If there's substantial demand, I can look into adding backward compatability.</p>
-            <p>Rank Report can't analyze logs that don't have any kills (since, you know, they don't have any ranks).</p>
+            <p>Warcraft Ranks is unable to access (and thus analyze) private logs.</p>
+            <p>Warcraft Ranks can currently only analyze logs from Hellfire Citadel. If there's substantial demand, I can look into adding backward compatability.</p>
+            <p>Warcraft Ranks can't analyze logs that don't have any kills (since, you know, they don't have any ranks).</p>
             <p>If you have an issue that's not covered above, send a link to the WCL report you're trying to analyze to notputzing@gmail.com. I can try to take a look and see what might be driving the error.  Feedback may also be sent to me on reddit at <a href="http://www.reddit.com/user/Putzahontas" target="_blank">/u/Putzahontas</a></p>
         </div>
       
@@ -63,7 +63,7 @@
         </div>
         
         <div class="panel-body">
-            <p>I'm best known in WoW as <a href="http://us.battle.net/wow/en/character/dragonblight/Putzahontas/simple" target="_blank">Putzahontas</a> on Dragonblight, although I recently mainswitched to my <a href="http://us.battle.net/wow/en/character/dragonblight/Putzform/simple" target="_blank">druid</a>.  I'm the raid leader of <a href="http://thetriarii.com/" target="_blank">Triarii</a> and regularly find myself looking through reports to see how folks are performing.  I initially made Rank Report for myself as an "I'm bored and coding is fun" project and realized it might be worth sharing with others.</p>
+            <p>I'm best known in WoW as <a href="http://us.battle.net/wow/en/character/dragonblight/Putzahontas/simple" target="_blank">Putzahontas</a> on Dragonblight, although I recently mainswitched to my <a href="http://us.battle.net/wow/en/character/dragonblight/Putzform/simple" target="_blank">druid</a>.  I'm the raid leader of <a href="http://thetriarii.com/" target="_blank">Triarii</a> and regularly find myself looking through reports to see how folks are performing.  I initially made Warcraft Ranks for myself as an "I'm bored and coding is fun" project and realized it might be worth sharing with others.</p>
             <p>Of course, none of this would be possible without the wonder that is <a href="https://www.warcraftlogs.com/" target="_blank">Warcraft Logs</a>.  I encourage you to support Kihra on <a href="https://www.patreon.com/warcraftlogs" target="_blank">Patreon</a>.</p>
             <p>Special thanks to <a href="http://us.battle.net/wow/en/character/dragonblight/Slushies/simple" target="_blank">Slushies</a> for his help designing and beta testing the site!</p>
         </div>
