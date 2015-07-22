@@ -43,69 +43,87 @@ def scrape_rankings(kills):
 	rankings["guild"]["speed"]["rank_class"] = {}
 	rankings["guild"]["speed"]["duration"] = {}
 	for kill in kills:
-		r=requests.get(kill["url"])
-		print kill["url"]
-		soup = BeautifulSoup(r.text, "html5lib")
-		data = dps_rankings(soup, rankings, kill["boss_id"])
-		data = hps_rankings(soup, rankings, kill["boss_id"])
-		data = tank_rankings(soup, rankings, kill["boss_id"])
-		data = guild_rankings(soup, rankings, kill["boss_id"])
+		try:
+			r=requests.get(kill["url"])
+			print kill["url"]
+			soup = BeautifulSoup(r.text, "html5lib")
+			try:
+				data = dps_rankings(soup, rankings, kill["boss_id"])
+			except:
+				pass
+			try:
+				data = hps_rankings(soup, rankings, kill["boss_id"])
+			except:
+				pass
+			try:
+				data = tank_rankings(soup, rankings, kill["boss_id"])
+			except:
+				pass
+			try:
+				data = guild_rankings(soup, rankings, kill["boss_id"])
+			except:
+				pass
+		except:
+			pass
 	return data
 
 def dps_rankings(soup, rankings, boss_id):
 	table = soup.findAll("table")[3]
 	for row in table.findAll("tr")[1:]:
-		link = row.findAll("a")[0]
-		name = link.contents[0]
-		spec_path = row.findAll("img")[0]["src"]
-		spec = re.findall( '-(.*?).jpg', spec_path)[0]
-		if name not in rankings["dps"]:
-			rankings["dps"][name] = {}
-			rankings["dps"][name]["class"] = link['class'][0]
-			if rankings["dps"][name]["class"] == "DeathKnight":
-				rankings["dps"][name]["class"] = "Death Knight"
-			rankings["dps"][name]["spec_path"] = spec_path
-			rankings["dps"][name]["spec"] = spec
-			rankings["dps"][name]["rank"] = {}
-			rankings["dps"][name]["rank_class"] = {}
-			rankings["dps"][name]["damage"] = {}
-			bracket = row.findAll("td")[7].contents[0]
-			bracket = bracket.strip(" Item Level")
-			rankings["dps"][name]["bracket"] = bracket
-			rankings["dps"][name]["br_rank"] = {}
-			rankings["dps"][name]["br_rank_class"] = {}
-			rankings["dps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
-		rankings["dps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
-		x = int(rankings["dps"][name]["rank"][boss_id])
-		if x > 50:
-			if x > 75:
-				if x > 95:
-					rankings["dps"][name]["rank_class"][boss_id] = "legendary"
+		try:
+			link = row.findAll("a")[0]
+			name = link.contents[0]
+			spec_path = row.findAll("img")[0]["src"]
+			spec = re.findall( '-(.*?).jpg', spec_path)[0]
+			if name not in rankings["dps"]:
+				rankings["dps"][name] = {}
+				rankings["dps"][name]["class"] = link['class'][0]
+				if rankings["dps"][name]["class"] == "DeathKnight":
+					rankings["dps"][name]["class"] = "Death Knight"
+				rankings["dps"][name]["spec_path"] = spec_path
+				rankings["dps"][name]["spec"] = spec
+				rankings["dps"][name]["rank"] = {}
+				rankings["dps"][name]["rank_class"] = {}
+				rankings["dps"][name]["damage"] = {}
+				bracket = row.findAll("td")[7].contents[0]
+				bracket = bracket.strip(" Item Level")
+				rankings["dps"][name]["bracket"] = bracket
+				rankings["dps"][name]["br_rank"] = {}
+				rankings["dps"][name]["br_rank_class"] = {}
+				rankings["dps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
+			rankings["dps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+			x = int(rankings["dps"][name]["rank"][boss_id])
+			if x > 50:
+				if x > 75:
+					if x > 95:
+						rankings["dps"][name]["rank_class"][boss_id] = "legendary"
+					else:
+						rankings["dps"][name]["rank_class"][boss_id] = "epic"
 				else:
-					rankings["dps"][name]["rank_class"][boss_id] = "epic"
+					rankings["dps"][name]["rank_class"][boss_id] = "rare"
+			elif x > 25:
+				rankings["dps"][name]["rank_class"][boss_id] = "uncommon"
 			else:
-				rankings["dps"][name]["rank_class"][boss_id] = "rare"
-		elif x > 25:
-			rankings["dps"][name]["rank_class"][boss_id] = "uncommon"
-		else:
-			rankings["dps"][name]["rank_class"][boss_id] = "common"
-		rankings["dps"][name]["damage"][boss_id] = row.findAll("td")[5].contents[0]
-		rankings["dps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
-		x = int(rankings["dps"][name]["br_rank"][boss_id])
-		if x > 50:
-			if x > 75:
-				if x > 95:
-					rankings["dps"][name]["br_rank_class"][boss_id] = "legendary"
+				rankings["dps"][name]["rank_class"][boss_id] = "common"
+			rankings["dps"][name]["damage"][boss_id] = row.findAll("td")[5].contents[0]
+			rankings["dps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+			x = int(rankings["dps"][name]["br_rank"][boss_id])
+			if x > 50:
+				if x > 75:
+					if x > 95:
+						rankings["dps"][name]["br_rank_class"][boss_id] = "legendary"
+					else:
+						rankings["dps"][name]["br_rank_class"][boss_id] = "epic"
 				else:
-					rankings["dps"][name]["br_rank_class"][boss_id] = "epic"
+					rankings["dps"][name]["br_rank_class"][boss_id] = "rare"
+			elif x > 25:
+				rankings["dps"][name]["br_rank_class"][boss_id] = "uncommon"
 			else:
-				rankings["dps"][name]["br_rank_class"][boss_id] = "rare"
-		elif x > 25:
-			rankings["dps"][name]["br_rank_class"][boss_id] = "uncommon"
-		else:
-			rankings["dps"][name]["br_rank_class"][boss_id] = "common"
-		if rankings["dps"][name]["spec"] != spec:
-			rankings["dps"][name]["spec"] = "Multiple"
+				rankings["dps"][name]["br_rank_class"][boss_id] = "common"
+			if rankings["dps"][name]["spec"] != spec:
+				rankings["dps"][name]["spec"] = "Multiple"
+		except:
+			pass
 	return rankings
 
 
@@ -281,10 +299,10 @@ def is_empty(any_structure):
 
 def logs_new_guild(guild_name, guild_server, guild_region):
 	try:
-		r = redis.from_url(os.environ.get('REDIS_URL'))
+		r = redis.from_url(os.environ.get('REDISTOGO_URL'))
 	except:
 		import config
-		r = redis.from_url(config.REDIS_URL)
+		r = redis.from_url(config.REDISTOGO_URL)
 	guild = {}
 	guild["guild_name"] = guild_name
 	guild["guild_server"] = guild_server
@@ -368,10 +386,10 @@ def refresh_guild_logs(guild_name, guild_server, guild_region, r):
 
 def last_log_from_guild(guild_name, guild_server, guild_region, r):
 	try:
-		r = redis.from_url(os.environ.get('REDIS_URL'))
+		r = redis.from_url(os.environ.get('REDISTOGO_URL'))
 	except:
 		import config
-		r = redis.from_url(config.REDIS_URL)
+		r = redis.from_url(config.REDISTOGO_URL)
 	guild = {}
 	guild["guild_name"] = guild_name
 	guild["guild_server"] = guild_server

@@ -10,11 +10,11 @@ import datetime
 app = Flask(__name__)
 try:
 	app.secret_key = os.environ['FLASK_KEY']
-	r = redis.from_url(os.environ.get('REDIS_URL'))
+	r = redis.from_url(os.environ.get('REDISTOGO_URL'))
 except:
 	import config
 	app.secret_key = config.FLASK_KEY
-	r = redis.from_url(config.REDIS_URL)
+	r = redis.from_url(config.REDISTOGO_URL)
 	
 
 
@@ -34,8 +34,10 @@ def report():
 			rankings = analyzed["details"]
 			boss_list = ast.literal_eval(boss_list)
 			rankings = ast.literal_eval(rankings)
+			print "I have this report"
 			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 		except:
+			print "trying to analyze"
 			analyzed = model.analyze(report)
 			boss_list = analyzed["kills"]
 			rankings = analyzed["details"]
