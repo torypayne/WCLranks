@@ -43,7 +43,3 @@
   color: #2a9fd6 !important;
   text-decoration: none !important;
 }
-
-table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25B4\25BE" 
-}
