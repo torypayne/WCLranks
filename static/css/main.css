@@ -38,3 +38,8 @@
 .refresh-btn{
 	float: right;
 }
+
+.guild-list-table a {
+  color: #2a9fd6 !important;
+  text-decoration: none !important;
+}
