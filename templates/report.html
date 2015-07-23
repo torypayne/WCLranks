@@ -379,6 +379,21 @@
 <script>$(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })</script>
+
+<script>
+// Javascript to enable link to tab
+var url = document.location.toString();
+if (url.match('#')) {
+    $('.nav-pills a[href=#'+url.split('#')[1]+']').tab('show') ;
+} 
+
+// Change hash for page-reload
+$('.nav-pills a').on('shown.bs.tab', function (e) {
+    window.location.hash = e.target.hash;
+})
+</script>
+
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
