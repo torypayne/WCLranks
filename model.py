@@ -43,28 +43,21 @@ def scrape_rankings(kills):
 	rankings["guild"]["speed"]["rank_class"] = {}
 	rankings["guild"]["speed"]["duration"] = {}
 	for kill in kills:
+		r=requests.get(kill["url"])
+		# print kill["url"]
+		soup = BeautifulSoup(r.text, "html5lib")
 		try:
-			r=requests.get(kill["url"])
-			print kill["url"]
-			soup = BeautifulSoup(r.text, "html5lib")
-			try:
-				data = dps_rankings(soup, rankings, kill["boss_id"])
-			except:
-				pass
-			try:
-				data = hps_rankings(soup, rankings, kill["boss_id"])
-			except:
-				pass
-			try:
-				data = tank_rankings(soup, rankings, kill["boss_id"])
-			except:
-				pass
-			try:
-				data = guild_rankings(soup, rankings, kill["boss_id"])
-			except:
-				pass
+			data = dps_rankings(soup, rankings, kill["boss_id"])
+			data = hps_rankings(soup, rankings, kill["boss_id"])
+			data = tank_rankings(soup, rankings, kill["boss_id"])
+			data = guild_rankings(soup, rankings, kill["boss_id"])
 		except:
-			pass
+			try:
+				data = alt_dps_rankings(soup, rankings, kill["boss_id"])
+				data = alt_hps_rankings(soup, rankings, kill["boss_id"])
+				data = alt_tank_rankings(soup, rankings, kill["boss_id"])
+			except:
+				pass
 	return data
 
 def dps_rankings(soup, rankings, boss_id):
@@ -418,4 +411,174 @@ def last_log_from_guild(guild_name, guild_server, guild_region, r):
 		report = False
 	return report
 
+
+def alt_dps_rankings(soup, rankings, boss_id):
+	table = soup.findAll("table")[1]
+	for row in table.findAll("tr")[1:]:
+		try:
+			link = row.findAll("a")[0]
+			name = link.contents[0]
+			spec_path = row.findAll("img")[0]["src"]
+			spec = re.findall( '-(.*?).jpg', spec_path)[0]
+			if name not in rankings["dps"]:
+				rankings["dps"][name] = {}
+				rankings["dps"][name]["class"] = link['class'][0]
+				if rankings["dps"][name]["class"] == "DeathKnight":
+					rankings["dps"][name]["class"] = "Death Knight"
+				rankings["dps"][name]["spec_path"] = spec_path
+				rankings["dps"][name]["spec"] = spec
+				rankings["dps"][name]["rank"] = {}
+				rankings["dps"][name]["rank_class"] = {}
+				rankings["dps"][name]["damage"] = {}
+				bracket = row.findAll("td")[7].contents[0]
+				bracket = bracket.strip(" Item Level")
+				rankings["dps"][name]["bracket"] = bracket
+				rankings["dps"][name]["br_rank"] = {}
+				rankings["dps"][name]["br_rank_class"] = {}
+				rankings["dps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
+			rankings["dps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+			x = int(rankings["dps"][name]["rank"][boss_id])
+			if x > 50:
+				if x > 75:
+					if x > 95:
+						rankings["dps"][name]["rank_class"][boss_id] = "legendary"
+					else:
+						rankings["dps"][name]["rank_class"][boss_id] = "epic"
+				else:
+					rankings["dps"][name]["rank_class"][boss_id] = "rare"
+			elif x > 25:
+				rankings["dps"][name]["rank_class"][boss_id] = "uncommon"
+			else:
+				rankings["dps"][name]["rank_class"][boss_id] = "common"
+			rankings["dps"][name]["damage"][boss_id] = row.findAll("td")[5].contents[0]
+			rankings["dps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+			x = int(rankings["dps"][name]["br_rank"][boss_id])
+			if x > 50:
+				if x > 75:
+					if x > 95:
+						rankings["dps"][name]["br_rank_class"][boss_id] = "legendary"
+					else:
+						rankings["dps"][name]["br_rank_class"][boss_id] = "epic"
+				else:
+					rankings["dps"][name]["br_rank_class"][boss_id] = "rare"
+			elif x > 25:
+				rankings["dps"][name]["br_rank_class"][boss_id] = "uncommon"
+			else:
+				rankings["dps"][name]["br_rank_class"][boss_id] = "common"
+			if rankings["dps"][name]["spec"] != spec:
+				rankings["dps"][name]["spec"] = "Multiple"
+		except:
+			pass
+	return rankings
+
+
+def alt_hps_rankings(soup, rankings, boss_id):
+	table = soup.findAll("table")[2]
+	for row in table.findAll("tr")[1:]:
+		link = row.findAll("a")[0]
+		name = link.contents[0]
+		spec_path = row.findAll("img")[0]["src"]
+		spec = re.findall( '-(.*?).jpg', spec_path)[0]
+		if name not in rankings["hps"]:
+			rankings["hps"][name] = {}
+			rankings["hps"][name]["class"] = link['class'][0]
+			rankings["hps"][name]["spec_path"] = spec_path
+			rankings["hps"][name]["spec"] = spec
+			rankings["hps"][name]["rank"] = {}
+			rankings["hps"][name]["rank_class"] = {}
+			rankings["hps"][name]["healing"] = {}
+			bracket = row.findAll("td")[7].contents[0]
+			bracket = bracket.strip(" Item Level")
+			rankings["hps"][name]["bracket"] = bracket
+			rankings["hps"][name]["br_rank"] = {}
+			rankings["hps"][name]["br_rank_class"] = {}
+			rankings["hps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
+		rankings["hps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+		x = int(rankings["hps"][name]["rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["hps"][name]["rank_class"][boss_id] = "legendary"
+				else:
+					rankings["hps"][name]["rank_class"][boss_id] = "epic"
+			else:
+				rankings["hps"][name]["rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["hps"][name]["rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["hps"][name]["rank_class"][boss_id] = "common"
+		rankings["hps"][name]["healing"][boss_id] = row.findAll("td")[5].contents[0]
+		rankings["hps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+		x = int(rankings["hps"][name]["br_rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["hps"][name]["br_rank_class"][boss_id] = "legendary"
+				else:
+					rankings["hps"][name]["br_rank_class"][boss_id] = "epic"
+			else:
+				rankings["hps"][name]["br_rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["hps"][name]["br_rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["hps"][name]["br_rank_class"][boss_id] = "common"
+		if rankings["hps"][name]["spec"] != spec:
+			rankings["hps"][name]["spec"] = "Multiple"
+	return rankings
+
+def alt_tank_rankings(soup, rankings, boss_id):
+	table = soup.findAll("table")[0]
+	for row in table.findAll("tr")[1:]:
+		link = row.findAll("a")[0]
+		name = link.contents[0]
+		spec_path = row.findAll("img")[0]["src"]
+		spec = re.findall( '-(.*?).jpg', spec_path)[0]
+		if name not in rankings["tank"]:
+			rankings["tank"][name] = {}
+			rankings["tank"][name]["class"] = link['class'][0]
+			if rankings["tank"][name]["class"] == "DeathKnight":
+				rankings["tank"][name]["class"] = "Death Knight"
+			rankings["tank"][name]["spec_path"] = spec_path
+			rankings["tank"][name]["spec"] = spec
+			rankings["tank"][name]["rank"] = {}
+			rankings["tank"][name]["rank_class"] = {}
+			rankings["tank"][name]["healing"] = {}
+			bracket = row.findAll("td")[7].contents[0]
+			bracket = bracket.strip(" Item Level")
+			rankings["tank"][name]["bracket"] = bracket
+			rankings["tank"][name]["br_rank"] = {}
+			rankings["tank"][name]["br_rank_class"] = {}
+			rankings["tank"][name]["ilvl"] = row.findAll("td")[6].contents[0]
+		rankings["tank"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
+		x = int(rankings["tank"][name]["rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["tank"][name]["rank_class"][boss_id] = "legendary"
+				else:
+					rankings["tank"][name]["rank_class"][boss_id] = "epic"
+			else:
+				rankings["tank"][name]["rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["tank"][name]["rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["tank"][name]["rank_class"][boss_id] = "common"
+		rankings["tank"][name]["healing"][boss_id] = row.findAll("td")[5].contents[0]
+		rankings["tank"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
+		x = int(rankings["tank"][name]["br_rank"][boss_id])
+		if x > 50:
+			if x > 75:
+				if x > 95:
+					rankings["tank"][name]["br_rank_class"][boss_id] = "legendary"
+				else:
+					rankings["tank"][name]["br_rank_class"][boss_id] = "epic"
+			else:
+				rankings["tank"][name]["br_rank_class"][boss_id] = "rare"
+		elif x > 25:
+			rankings["tank"][name]["br_rank_class"][boss_id] = "uncommon"
+		else:
+			rankings["tank"][name]["br_rank_class"][boss_id] = "common"
+		if rankings["tank"][name]["spec"] != spec:
+			rankings["tank"][name]["spec"] = "Multiple"
+	return rankings
 
