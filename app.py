@@ -100,6 +100,29 @@ def update_guild_list():
 	guild = model.refresh_guild_logs(guild_name, guild_server, guild_region, r)
 	return render_template("guild_list.html", guild=guild)
 
+
+@app.route("/triarii")
+def triarii():
+	guild_name = "Triarii"
+	guild_server = "Dragonblight"
+	guild_region = "US"
+	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+	redis_guild = r.hgetall(guild_id_string)
+	guild = {}
+	guild["guild_name"] = redis_guild["guild_name"]
+	guild["guild_server"] = redis_guild["guild_server"]
+	guild["guild_region"] = redis_guild["guild_region"]
+	guild["logs"] = eval(redis_guild["logs"])
+	return render_template("guild_list.html", guild=guild)
+
+@app.route("/triarii", methods=["POST"])
+def update_triarii():
+	guild_name = "Triarii"
+	guild_server = "Dragonblight"
+	guild_region = "US"
+	guild = model.refresh_guild_logs(guild_name, guild_server, guild_region, r)
+	return render_template("guild_list.html", guild=guild)
+
 @app.route("/about")
 def about():
 	return render_template("about.html")

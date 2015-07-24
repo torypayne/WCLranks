@@ -27,7 +27,7 @@
 <div class="container">
   <form action="/guild_list?guild={{guild['guild_name']}}&server={{guild['guild_server']}}&region={{guild['guild_region']}}" method="POST">
 <h2>{{guild["guild_name"]}}</h2>
-<h5>Recent Reports - {{guild["guild_server"]}} - {{guild["guild_region"]}} <input type="submit" class="btn refresh-btn btn-sm" value="Check for New Logs" data-toggle="tooltip" data-placement="left" title="Check WCL to see if the guild has any new logs"></form></h5>
+<h5>Recent Reports - {{guild["guild_server"]}} - {{guild["guild_region"]}} <button type="submit" class="btn refresh-btn btn-sm ladda-button" data-toggle="tooltip" data-placement="left" title="Check WCL to see if the guild has any new logs" data-style="slide-left"><span class="ladda-label">Check for New Logs</span></button></form></h5>
 <div class="component"></h5>
   <br>
               <table class="table table-striped table-hover sortable guild-list-table">
@@ -68,7 +68,6 @@
 
 <script src="static/js/spin.min.js"></script>
 <script src="static/js/ladda.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
 
 <script>
            Ladda.bind( '.ladda-button', { timeout: 25000 } );
