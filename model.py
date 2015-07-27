@@ -277,10 +277,13 @@ def guild_rankings(soup, rankings, boss_id):
 	return rankings
 
 def analyze(log_id):
-	response = get_fights_from_log_id(log_id)
-	kills = find_boss_fights(response, log_id)
-	details = scrape_rankings(kills)
-	report = {"kills": kills, "details": details}
+	try:
+		response = get_fights_from_log_id(log_id)
+		kills = find_boss_fights(response, log_id)
+		details = scrape_rankings(kills)
+		report = {"kills": kills, "details": details}
+	except:
+		report = {"kills": False, "details": False}
 	return report
 
 
@@ -363,18 +366,18 @@ def refresh_guild_logs(guild_name, guild_server, guild_region, r):
 			if log["zone"] == 8:
 				new_log = {}
 				new_log["log_id"] = log["id"]
-				analyze(log_id)
+				analyze(log["id"])
 				new_log["title"] = log["title"]
 				new_log["start"] = log["start"]/1000
 				new_log["date"] = datetime.date.fromtimestamp(log["start"]/1000)
 				new_log["owner"] = log["owner"]
 				guild["logs"].append(new_log)
+		guild["last_checked"] = int(time.time())
+		guild["last_checked_dt"] = datetime.datetime.fromtimestamp(guild["last_checked"])
+		guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
+		r.hmset(guild_id_string, guild)
 	except:
 		pass
-	guild["last_checked"] = int(time.time())
-	guild["last_checked_dt"] = datetime.datetime.fromtimestamp(guild["last_checked"])
-	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
-	r.hmset(guild_id_string, guild)
 	return guild
 
 def last_log_from_guild(guild_name, guild_server, guild_region, r):
