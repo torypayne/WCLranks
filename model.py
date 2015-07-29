@@ -352,16 +352,20 @@ def analyze_guild_logs(guild, r):
 def refresh_guild_logs(guild_name, guild_server, guild_region, r):
 	guild_id_string = guild_name+"_"+guild_server+"_"+guild_region
 	redis_guild = r.hgetall(guild_id_string)
+	print redis_guild
 	guild = {}
 	guild["guild_name"] = redis_guild["guild_name"]
 	guild["guild_server"] = redis_guild["guild_server"]
 	guild["guild_region"] = redis_guild["guild_region"]
 	guild["logs"] = eval(redis_guild["logs"])
-	guild["last_checked"] = redis_guild["last_checked"]*1000
+	guild["last_checked"] = int(redis_guild["last_checked"])*1000
 	start_time = guild["last_checked"]
+	print start_time
 	try:
 		response = requests.get("https://www.warcraftlogs.com:443/v1/reports/guild/"+guild_name+"/"+guild_server+"/"+guild_region+"?start="+str(start_time)+"&api_key=9457bbf774422ab14b5625efb2b35e36")
+		print response
 		response = json.loads(response.text)
+		print response
 		for log in response:
 			if log["zone"] == 8:
 				new_log = {}
