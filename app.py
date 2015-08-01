@@ -27,24 +27,24 @@ def index():
 def report():
 	report = request.args.get("report")
 	report = report[-16:]
+	# try:
 	try:
-		try:
-			analyzed = r.hgetall(report)
-			boss_list = analyzed["kills"]
-			rankings = analyzed["details"]
-			boss_list = ast.literal_eval(boss_list)
-			rankings = ast.literal_eval(rankings)
-			print "I have this report"
-			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
-		except:
-			print "trying to analyze"
-			analyzed = model.analyze(report)
-			boss_list = analyzed["kills"]
-			rankings = analyzed["details"]
-			r.hmset(report, analyzed)
-			return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+		analyzed = r.hgetall(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		boss_list = ast.literal_eval(boss_list)
+		rankings = ast.literal_eval(rankings)
+		# print "I have this report"
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
 	except:
-		return render_template("badlog.html")
+		# print "trying to analyze"
+		analyzed = model.analyze(report)
+		boss_list = analyzed["kills"]
+		rankings = analyzed["details"]
+		r.hmset(report, analyzed)
+		return render_template("report.html", boss_list=boss_list, rankings=rankings, report=report)
+	# except:
+	# 	return render_template("badlog.html")
 
 @app.route("/report", methods=["POST"])
 def refresh_report():
