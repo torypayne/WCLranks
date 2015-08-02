@@ -52,6 +52,7 @@ def scrape_rankings(kills):
 			data = tank_rankings(soup, rankings, kill["boss_id"])
 			data = guild_rankings(soup, rankings, kill["boss_id"])
 		except:
+			#rankings for where guild rankings aren't provided
 			try:
 				data = alt_dps_rankings(soup, rankings, kill["boss_id"])
 				data = alt_hps_rankings(soup, rankings, kill["boss_id"])
