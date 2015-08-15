@@ -23,6 +23,7 @@ def find_boss_fights(r, log_id):
 				boss_dict["fight_id"] = i["id"]
 				boss_dict["boss_name"] = i["name"]
 				boss_dict["url"] = "https://www.warcraftlogs.com/rankings/report_rankings_for_fight/"+str(log_id)+"/"+str(boss_dict["fight_id"])+"/"+str(boss_dict["boss_id"])
+				print boss_dict
 				kills.append(boss_dict)
 	return kills
 
@@ -47,21 +48,21 @@ def scrape_rankings(kills):
 		# print kill["url"]
 		soup = BeautifulSoup(r.text, "html5lib")
 		try:
-			data = dps_rankings(soup, rankings, kill["boss_id"])
-			data = hps_rankings(soup, rankings, kill["boss_id"])
-			data = tank_rankings(soup, rankings, kill["boss_id"])
-			data = guild_rankings(soup, rankings, kill["boss_id"])
+			data = dps_rankings(soup, rankings, kill["fight_id"])
+			data = hps_rankings(soup, rankings, kill["fight_id"])
+			data = tank_rankings(soup, rankings, kill["fight_id"])
+			data = guild_rankings(soup, rankings, kill["fight_id"])
 		except:
 			#rankings for where guild rankings aren't provided
 			try:
-				data = alt_dps_rankings(soup, rankings, kill["boss_id"])
-				data = alt_hps_rankings(soup, rankings, kill["boss_id"])
-				data = alt_tank_rankings(soup, rankings, kill["boss_id"])
+				data = alt_dps_rankings(soup, rankings, kill["fight_id"])
+				data = alt_hps_rankings(soup, rankings, kill["fight_id"])
+				data = alt_tank_rankings(soup, rankings, kill["fight_id"])
 			except:
 				pass
 	return data
 
-def dps_rankings(soup, rankings, boss_id):
+def dps_rankings(soup, rankings, fight_id):
 	table = soup.findAll("table")[3]
 	for row in table.findAll("tr")[1:]:
 		try:
@@ -85,35 +86,35 @@ def dps_rankings(soup, rankings, boss_id):
 				rankings["dps"][name]["br_rank"] = {}
 				rankings["dps"][name]["br_rank_class"] = {}
 				rankings["dps"][name]["ilvl"] = row.findAll("td")[6].contents[0]
-			rankings["dps"][name]["rank"][boss_id] = row.findAll("td")[0].contents[0]
-			x = int(rankings["dps"][name]["rank"][boss_id])
+			rankings["dps"][name]["rank"][fight_id] = row.findAll("td")[0].contents[0]
+			x = int(rankings["dps"][name]["rank"][fight_id])
 			if x > 50:
 				if x > 75:
 					if x > 95:
-						rankings["dps"][name]["rank_class"][boss_id] = "legendary"
+						rankings["dps"][name]["rank_class"][fight_id] = "legendary"
 					else:
-						rankings["dps"][name]["rank_class"][boss_id] = "epic"
+						rankings["dps"][name]["rank_class"][fight_id] = "epic"
 				else:
-					rankings["dps"][name]["rank_class"][boss_id] = "rare"
+					rankings["dps"][name]["rank_class"][fight_id] = "rare"
 			elif x > 25:
-				rankings["dps"][name]["rank_class"][boss_id] = "uncommon"
+				rankings["dps"][name]["rank_class"][fight_id] = "uncommon"
 			else:
-				rankings["dps"][name]["rank_class"][boss_id] = "common"
-			rankings["dps"][name]["damage"][boss_id] = row.findAll("td")[5].contents[0]
-			rankings["dps"][name]["br_rank"][boss_id] = row.findAll("td")[8].contents[0]
-			x = int(rankings["dps"][name]["br_rank"][boss_id])
+				rankings["dps"][name]["rank_class"][fight_id] = "common"
+			rankings["dps"][name]["damage"][fight_id] = row.findAll("td")[5].contents[0]
+			rankings["dps"][name]["br_rank"][fight_id] = row.findAll("td")[8].contents[0]
+			x = int(rankings["dps"][name]["br_rank"][fight_id])
 			if x > 50:
 				if x > 75:
 					if x > 95:
-						rankings["dps"][name]["br_rank_class"][boss_id] = "legendary"
+						rankings["dps"][name]["br_rank_class"][fight_id] = "legendary"
 					else:
-						rankings["dps"][name]["br_rank_class"][boss_id] = "epic"
+						rankings["dps"][name]["br_rank_class"][fight_id] = "epic"
 				else:
-					rankings["dps"][name]["br_rank_class"][boss_id] = "rare"
+					rankings["dps"][name]["br_rank_class"][fight_id] = "rare"
 			elif x > 25:
-				rankings["dps"][name]["br_rank_class"][boss_id] = "uncommon"
+				rankings["dps"][name]["br_rank_class"][fight_id] = "uncommon"
 			else:
-				rankings["dps"][name]["br_rank_class"][boss_id] = "common"
+				rankings["dps"][name]["br_rank_class"][fight_id] = "common"
 			if rankings["dps"][name]["spec"] != spec:
 				rankings["dps"][name]["spec"] = "Multiple"
 		except:
