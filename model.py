@@ -306,7 +306,7 @@ def logs_new_guild(guild_name, guild_server, guild_region):
 	guild["guild_server"] = guild_server
 	guild["guild_region"] = guild_region
 	guild["logs"] = []
-	start_time = 1435734000000
+	start_time = 1438387200000
 	response = requests.get("https://www.warcraftlogs.com:443/v1/reports/guild/"+guild_name+"/"+guild_server+"/"+guild_region+"?start="+str(start_time)+"&api_key=9457bbf774422ab14b5625efb2b35e36")
 	response = json.loads(response.text)
 	# print response
